@@ -75,12 +75,12 @@ let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 " ==============================================================================
 
 " Redo
-nmap U <C-r>
+map U <C-r>
 
-nmap gb <Action>(Back)
-nmap gf <Action>(Forward)
-nmap gs <Action>(SelectInProjectView)
-nmap gS <Action>(SelectIn)
+map gb <Action>(Back)
+map gf <Action>(Forward)
+map gs <Action>(SelectInProjectView)
+map gS <Action>(SelectIn)
 
 " --------------------------------------
 " C-W - Window/Split
@@ -101,33 +101,25 @@ map <A-h> <Action>(MoveElementLeft)
 map <A-l> <Action>(MoveElementRight)
 map <C-j> <Action>(EditorUnSelectWord)
 map <C-k> <Action>(EditorSelectWord)
-nmap <D-A-j> <Action>(MethodDown)
-nmap <D-A-k> <Action>(MethodUp)
-nmap <D-C-j> <Action>(VcsShowNextChangeMarker)
-nmap <D-C-k> <Action>(VcsShowPrevChangeMarker)
-nmap <A-C-j> <Action>(GotoNextError)
-nmap <A-C-k> <Action>(GotoPreviousError)
-nmap <D-A-C-j> <Action>(EditorCloneCaretBelow)
-nmap <D-A-C-k> <Action>(EditorCloneCaretAbove)
+map <D-A-j> <Action>(MethodDown)
+map <D-A-k> <Action>(MethodUp)
+map <D-C-j> <Action>(VcsShowNextChangeMarker)
+map <D-C-k> <Action>(VcsShowPrevChangeMarker)
+map <A-C-j> <Action>(GotoNextError)
+map <A-C-k> <Action>(GotoPreviousError)
+map <D-A-C-j> <Action>(EditorCloneCaretBelow)
+map <D-A-C-k> <Action>(EditorCloneCaretAbove)
 vmap <D-A-C-l> <Action>(EditorAddCaretPerSelectedLine)
 
 " --------------------------------------
 " multiple-cursors
 " --------------------------------------
-nmap <D-A-C-f> <Plug>NextWholeOccurrence
-xmap <D-A-C-f> <Plug>NextWholeOccurrence
-omap <D-A-C-f> <Plug>NextWholeOccurrence
-nmap <D-A-C-g> <Plug>NextOccurrence
-xmap <D-A-C-g> <Plug>NextOccurrence
-omap <D-A-C-g> <Plug>NextOccurrence
-xmap <D-A-C-s> <Plug>SkipOccurrence
-xmap <D-A-C-x> <Plug>RemoveOccurrence
-nmap <D-A-C-a> <Plug>AllWholeOccurrences
-xmap <D-A-C-a> <Plug>AllWholeOccurrences
-omap <D-A-C-a> <Plug>AllWholeOccurrences
-nmap <D-A-C-b> <Plug>AllOccurrences
-xmap <D-A-C-b> <Plug>AllOccurrences
-omap <D-A-C-b> <Plug>AllOccurrences
+map <D-A-C-f> <Plug>NextWholeOccurrence
+map <D-A-C-g> <Plug>NextOccurrence
+map <D-A-C-s> <Plug>SkipOccurrence
+map <D-A-C-x> <Plug>RemoveOccurrence
+map <D-A-C-a> <Plug>AllWholeOccurrences
+map <D-A-C-b> <Plug>AllOccurrences
 
 " --------------------------------------
 " y, d, p - Copy/Cut/Paste
@@ -153,11 +145,11 @@ map <leader>ex <Action>(Stop)
 " --------------------------------------
 " i - Info
 " --------------------------------------
-nmap <leader><leader>i <Action>(QuickJavaDoc)
-nmap <leader>ii <Action>(QuickImplementations)
-nmap <leader>ie <Action>(ShowErrorDescription)
-nmap <leader>id <Action>(QuickJavaDoc)
-nmap <leader>ip <Action>(ParameterInfo)
+map <leader><leader>i <Action>(QuickJavaDoc)
+map <leader>ii <Action>(QuickImplementations)
+map <leader>ie <Action>(ShowErrorDescription)
+map <leader>id <Action>(QuickJavaDoc)
+map <leader>ip <Action>(ParameterInfo)
 
 " --------------------------------------
 " f - Find/Search
@@ -172,31 +164,31 @@ map <leader>ft <Action>(TextSearchAction)
 " --------------------------------------
 " g - Goto (Code)
 " --------------------------------------
-nmap <leader><leader>g <Action>(GotoDeclaration)
-nmap <leader>gd <Action>(GotoDeclaration)
-nmap <leader>gt <Action>(GotoTypeDeclaration)
-nmap <leader>gi <Action>(GotoImplementation)
-nmap <leader>gr <Action>(GotoRelated)
-nmap <leader>gs <Action>(GotoSuperMethod)
-nmap <leader>gu <Action>(ShowUsages)
-nmap <leader>gU <Action>(FindUsages)
-nmap <leader>gm <Action>(FileStructurePopup)
+map <leader><leader>g <Action>(GotoDeclaration)
+map <leader>gd <Action>(GotoDeclaration)
+map <leader>gt <Action>(GotoTypeDeclaration)
+map <leader>gi <Action>(GotoImplementation)
+map <leader>gr <Action>(GotoRelated)
+map <leader>gs <Action>(GotoSuperMethod)
+map <leader>gu <Action>(ShowUsages)
+map <leader>gU <Action>(FindUsages)
+map <leader>gm <Action>(FileStructurePopup)
 
 " --------------------------------------
 " r - Refactor
 " --------------------------------------
-nmap <leader><leader>r <Action>(Refactorings.QuickListPopupAction)
-nmap <leader>rc <Action>(IntroduceConstant)
-nmap <leader>rf <Action>(IntroduceField)
-nmap <leader>ri <Action>(ExtractInterface)
-nmap <leader>rl <Action>(Inline)
-nmap <leader>rm <Action>(ExtractMethod)
-nmap <leader>ro <Action>(Move)
-nmap <leader>rp <Action>(IntroduceParameter)
-nmap <leader>rr <Action>(RenameElement)
-nmap <leader>rs <Action>(ChangeSignature)
-nmap <leader>ru <Action>(MembersPullUp)
-nmap <leader>rv <Action>(IntroduceVariable)
+map <leader><leader>r <Action>(Refactorings.QuickListPopupAction)
+map <leader>rc <Action>(IntroduceConstant)
+map <leader>rf <Action>(IntroduceField)
+map <leader>ri <Action>(ExtractInterface)
+map <leader>rl <Action>(Inline)
+map <leader>rm <Action>(ExtractMethod)
+map <leader>ro <Action>(Move)
+map <leader>rp <Action>(IntroduceParameter)
+map <leader>rr <Action>(RenameElement)
+map <leader>rs <Action>(ChangeSignature)
+map <leader>ru <Action>(MembersPullUp)
+map <leader>rv <Action>(IntroduceVariable)
 
 " --------------------------------------
 " s - SwitchCase
@@ -212,17 +204,17 @@ map <leader>sS <Action>(StringManipulation.ToScreamingSnakeCase)
 " --------------------------------------
 " t - ToolWindow
 " --------------------------------------
-nmap <leader><leader>t <Action>(HideAllWindows)
-nmap <leader>ta <Action>(ActivateAIAssistantToolWindow)
-nmap <leader>tc <Action>(ActivateCommitToolWindow)
-nmap <leader>td <Action>(ActivateDebugToolWindow)
-nmap <leader>te <Action>(ActivateProblemsViewToolWindow)
-nmap <leader>tf <Action>(ActivateFindToolWindow)
-nmap <leader>tp <Action>(ActivateProjectToolWindow)
-nmap <leader>tr <Action>(ActivateRunToolWindow)
-nmap <leader>tt <Action>(ActivateTerminalToolWindow)
-nmap <leader>tv <Action>(ActivateVersionControlToolWindow)
-nmap <leader>tV <Action>(ActivatePullRequestsToolWindow)
+map <leader><leader>t <Action>(HideAllWindows)
+map <leader>ta <Action>(ActivateAIAssistantToolWindow)
+map <leader>tc <Action>(ActivateCommitToolWindow)
+map <leader>td <Action>(ActivateDebugToolWindow)
+map <leader>te <Action>(ActivateProblemsViewToolWindow)
+map <leader>tf <Action>(ActivateFindToolWindow)
+map <leader>tp <Action>(ActivateProjectToolWindow)
+map <leader>tr <Action>(ActivateRunToolWindow)
+map <leader>tt <Action>(ActivateTerminalToolWindow)
+map <leader>tv <Action>(ActivateVersionControlToolWindow)
+map <leader>tV <Action>(ActivatePullRequestsToolWindow)
 
 " --------------------------------------
 " v - Vcs
@@ -244,12 +236,12 @@ map <leader>vu <Action>(Vcs.UpdateProject)
 " --------------------------------------
 " x - Close/Hide/Delete
 " --------------------------------------
-nmap <leader><leader>x <Action>(CloseProject)
-nmap <leader>xn <Action>(CloseAllNotifications)
+map <leader><leader>x <Action>(CloseProject)
+map <leader>xn <Action>(CloseAllNotifications)
 
 " --------------------------------------
 " \ - IdeaVim
 " --------------------------------------
-nmap \\ <Action>(IdeaVim.ReloadVimRc.reload)
-nmap \f <Action>(VimFindActionIdAction)
-nmap \a <Action>(VimActions)
+map \\ <Action>(IdeaVim.ReloadVimRc.reload)
+map \f <Action>(VimFindActionIdAction)
+map \a <Action>(VimActions)
