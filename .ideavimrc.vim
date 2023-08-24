@@ -103,8 +103,8 @@ map <D-S-h> <Action>(MoveElementLeft)
 map <D-S-l> <Action>(MoveElementRight)
 map <A-j> <Action>(EditorUnSelectWord)
 map <A-k> <Action>(EditorSelectWord)
-map <C-j> <C-d>
-map <C-k> <C-u>
+map <C-j> <C-d>zz
+map <C-k> <C-u>zz
 map <D-A-j> <Action>(MethodDown)
 map <D-A-k> <Action>(MethodUp)
 map <D-C-j> <Action>(VcsShowNextChangeMarker)
