@@ -162,6 +162,7 @@ map <leader>ip <Action>(ParameterInfo)
 " --------------------------------------
 map <leader><leader>f <Plug>(easymotion-s)
 map <leader>fc <Action>(GotoClass)
+map <leader>fe <Action>(SearchEverywhere)
 map <leader>ff <Action>(GotoFile)
 map <leader>fs <Action>(GotoSymbol)
 map <leader>fa <Action>(GotoAction)
