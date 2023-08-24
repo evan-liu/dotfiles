@@ -82,6 +82,8 @@ map gf <Action>(Forward)
 map gs <Action>(SelectInProjectView)
 map gS <Action>(SelectIn)
 
+map <C-s> <Action>(SaveAll)
+
 " --------------------------------------
 " C-W - Window/Split
 " --------------------------------------
@@ -95,12 +97,14 @@ map <C-w>x <Action>(Unsplit)
 " --------------------------------------
 map <D-j> <Action>(MoveLineDown)
 map <D-k> <Action>(MoveLineUp)
-map <A-j> <Action>(MoveStatementDown)
-map <A-k> <Action>(MoveStatementUp)
-map <A-h> <Action>(MoveElementLeft)
-map <A-l> <Action>(MoveElementRight)
-map <C-j> <Action>(EditorUnSelectWord)
-map <C-k> <Action>(EditorSelectWord)
+map <D-S-j> <Action>(MoveStatementDown)
+map <D-S-k> <Action>(MoveStatementUp)
+map <D-S-h> <Action>(MoveElementLeft)
+map <D-S-l> <Action>(MoveElementRight)
+map <A-j> <Action>(EditorUnSelectWord)
+map <A-k> <Action>(EditorSelectWord)
+map <C-j> <C-d>
+map <C-k> <C-u>
 map <D-A-j> <Action>(MethodDown)
 map <D-A-k> <Action>(MethodUp)
 map <D-C-j> <Action>(VcsShowNextChangeMarker)
@@ -126,7 +130,9 @@ map <D-A-C-b> <Plug>AllOccurrences
 " --------------------------------------
 map <leader><leader>y <Action>(CopyReferencePopupGroup)
 map <leader>y "+y
+map <leader>Y "+Y
 map <leader>d "_d
+map <leader>D "_D
 map <leader>p "+p
 map <leader>P "+P
 
@@ -160,6 +166,8 @@ map <leader>ff <Action>(GotoFile)
 map <leader>fs <Action>(GotoSymbol)
 map <leader>fa <Action>(GotoAction)
 map <leader>ft <Action>(TextSearchAction)
+
+map <leader>fp <Action>(ManageRecentProjects)
 
 " --------------------------------------
 " g - Goto (Code)
@@ -229,6 +237,7 @@ map <leader>vh <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>vH <Action>(LocalHistory.ShowHistory)
 map <leader>vl <Action>(Vcs.RollbackChangedLines)
 map <leader>vm <Action>(Vcs.ShowMessageHistory)
+map <leader>vn <Action>(Git.CreateNewBranch)
 map <leader>vp <Action>(Vcs.Push)
 map <leader>vr <Action>(ChangesView.Revert)
 map <leader>vu <Action>(Vcs.UpdateProject)
