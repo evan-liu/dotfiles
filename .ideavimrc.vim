@@ -77,12 +77,13 @@ let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 " Redo
 map U <C-r>
 
+map <C-j> <C-d>zz
+map <C-k> <C-u>zz
+
 map gb <Action>(Back)
 map gf <Action>(Forward)
 map gs <Action>(SelectInProjectView)
 map gS <Action>(SelectIn)
-
-map <C-s> <Action>(SaveAll)
 
 " --------------------------------------
 " C-W - Window/Split
@@ -91,29 +92,6 @@ map <C-w>r <Action>(MoveTabRight)
 map <C-w>d <Action>(MoveTabDown)
 map <C-w>m <Action>(MoveEditorToOppositeTabGroup)
 map <C-w>x <Action>(Unsplit)
-
-" --------------------------------------
-" J K with modifiers
-" --------------------------------------
-map <D-j> <Action>(MoveLineDown)
-map <D-k> <Action>(MoveLineUp)
-map <D-S-j> <Action>(MoveStatementDown)
-map <D-S-k> <Action>(MoveStatementUp)
-map <D-S-h> <Action>(MoveElementLeft)
-map <D-S-l> <Action>(MoveElementRight)
-map <A-j> <Action>(EditorUnSelectWord)
-map <A-k> <Action>(EditorSelectWord)
-map <C-j> <C-d>zz
-map <C-k> <C-u>zz
-map <D-A-j> <Action>(MethodDown)
-map <D-A-k> <Action>(MethodUp)
-map <D-C-j> <Action>(VcsShowNextChangeMarker)
-map <D-C-k> <Action>(VcsShowPrevChangeMarker)
-map <A-C-j> <Action>(GotoNextError)
-map <A-C-k> <Action>(GotoPreviousError)
-map <D-A-C-j> <Action>(EditorCloneCaretBelow)
-map <D-A-C-k> <Action>(EditorCloneCaretAbove)
-vmap <D-A-C-l> <Action>(EditorAddCaretPerSelectedLine)
 
 " --------------------------------------
 " multiple-cursors
