@@ -169,6 +169,7 @@ map <leader>fa <Action>(GotoAction)
 map <leader>ft <Action>(TextSearchAction)
 
 map <leader>fp <Action>(ManageRecentProjects)
+map <leader>fS <Action>(Scratch.ShowFilesPopup)
 
 " --------------------------------------
 " g - Goto (Code)
@@ -232,7 +233,7 @@ map <leader><leader>v <Action>(Vcs.QuickListPopupAction)
 map <leader>va <Action>(Vcs.ToggleAmendCommitMode)
 map <leader>vb <Action>(Git.Branches)
 map <leader>vc <Action>(CheckinProject)
-map <leader>vd <Action>(Diff.ShowDiff)
+map <leader>vd <Action>(Compare.SameVersion)
 map <leader>vf <Action>(Vcs.Log.ShowAllAffected)
 map <leader>vh <Action>(Vcs.ShowTabbedFileHistory)
 map <leader>vH <Action>(LocalHistory.ShowHistory)
