@@ -85,6 +85,8 @@ map gf <Action>(Forward)
 map gs <Action>(SelectInProjectView)
 map gS <Action>(SelectIn)
 
+map <leader><CR> <Action>(ShowIntentionActions)
+
 " --------------------------------------
 " C-W - Window/Split
 " --------------------------------------
@@ -127,15 +129,6 @@ map <leader>eR <Action>(RunClass)
 map <leader>ex <Action>(Stop)
 
 " --------------------------------------
-" i - Info
-" --------------------------------------
-map <leader><leader>i <Action>(QuickJavaDoc)
-map <leader>ii <Action>(QuickImplementations)
-map <leader>ie <Action>(ShowErrorDescription)
-map <leader>id <Action>(QuickJavaDoc)
-map <leader>ip <Action>(ParameterInfo)
-
-" --------------------------------------
 " f - Find/Search
 " --------------------------------------
 map <leader><leader>f <Plug>(easymotion-s)
@@ -150,77 +143,86 @@ map <leader>fp <Action>(ManageRecentProjects)
 map <leader>fS <Action>(Scratch.ShowFilesPopup)
 
 " --------------------------------------
-" g - Goto (Code)
+" d - Doc/Info
 " --------------------------------------
-map <leader><leader>g <Action>(GotoDeclaration)
-map <leader>gd <Action>(GotoDeclaration)
-map <leader>gt <Action>(GotoTypeDeclaration)
-map <leader>gi <Action>(GotoImplementation)
-map <leader>gr <Action>(GotoRelated)
-map <leader>gs <Action>(GotoSuperMethod)
-map <leader>gu <Action>(ShowUsages)
-map <leader>gU <Action>(FindUsages)
-map <leader>gm <Action>(FileStructurePopup)
+map <leader><leader>d <Action>(QuickJavaDoc)
+map <leader>di <Action>(QuickImplementations)
+map <leader>de <Action>(ShowErrorDescription)
+map <leader>dd <Action>(QuickJavaDoc)
+map <leader>dp <Action>(ParameterInfo)
 
 " --------------------------------------
-" r - Refactor
+" s - Source Control
 " --------------------------------------
-map <leader><leader>r <Action>(Refactorings.QuickListPopupAction)
-map <leader>rc <Action>(IntroduceConstant)
-map <leader>rf <Action>(IntroduceField)
-map <leader>ri <Action>(ExtractInterface)
-map <leader>rl <Action>(Inline)
-map <leader>rm <Action>(ExtractMethod)
-map <leader>ro <Action>(Move)
-map <leader>rp <Action>(IntroduceParameter)
-map <leader>rr <Action>(RenameElement)
-map <leader>rs <Action>(ChangeSignature)
-map <leader>ru <Action>(MembersPullUp)
-map <leader>rv <Action>(IntroduceVariable)
+map <leader><leader>s <Action>(Vcs.QuickListPopupAction)
+map <leader>sa <Action>(Vcs.ToggleAmendCommitMode)
+map <leader>sb <Action>(Git.Branches)
+map <leader>sc <Action>(CheckinProject)
+map <leader>sd <Action>(Compare.SameVersion)
+map <leader>sf <Action>(Vcs.Log.ShowAllAffected)
+map <leader>sh <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>sH <Action>(LocalHistory.ShowHistory)
+map <leader>sl <Action>(Vcs.RollbackChangedLines)
+map <leader>sm <Action>(Vcs.ShowMessageHistory)
+map <leader>sn <Action>(Git.CreateNewBranch)
+map <leader>sp <Action>(Vcs.Push)
+map <leader>sr <Action>(ChangesView.Revert)
+map <leader>su <Action>(Vcs.UpdateProject)
 
 " --------------------------------------
-" s - SwitchCase
+" a - SwitchCase
 " --------------------------------------
-map <leader><leader>s <Action>(osmedile.intellij.stringmanip.SwitchCasePopup)
-map <leader>sc <Action>(StringManipulation.ToCamelCase)
-map <leader>ss <Action>(StringManipulation.ToSnakeCase)
-map <leader>sk <Action>(StringManipulation.ToKebabCase)
-map <leader>sp <Action>(StringManipulation.ToPascalCase)
-map <leader>sC <Action>(osmedile.intellij.stringmanip.WordsCapitalizeAction)
-map <leader>sS <Action>(StringManipulation.ToScreamingSnakeCase)
+map <leader><leader>a <Action>(osmedile.intellij.stringmanip.SwitchCasePopup)
+map <leader>ac <Action>(StringManipulation.ToCamelCase)
+map <leader>as <Action>(StringManipulation.ToSnakeCase)
+map <leader>ak <Action>(StringManipulation.ToKebabCase)
+map <leader>ap <Action>(StringManipulation.ToPascalCase)
+map <leader>aC <Action>(osmedile.intellij.stringmanip.WordsCapitalizeAction)
+map <leader>aS <Action>(StringManipulation.ToScreamingSnakeCase)
 
 " --------------------------------------
-" t - ToolWindow
+" j - Jump/Goto (Code)
 " --------------------------------------
-map <leader><leader>t <Action>(HideAllWindows)
-map <leader>ta <Action>(ActivateAIAssistantToolWindow)
-map <leader>tc <Action>(ActivateCommitToolWindow)
-map <leader>td <Action>(ActivateDebugToolWindow)
-map <leader>te <Action>(ActivateProblemsViewToolWindow)
-map <leader>tf <Action>(ActivateFindToolWindow)
-map <leader>tp <Action>(ActivateProjectToolWindow)
-map <leader>tr <Action>(ActivateRunToolWindow)
-map <leader>tt <Action>(ActivateTerminalToolWindow)
-map <leader>tv <Action>(ActivateVersionControlToolWindow)
-map <leader>tV <Action>(ActivatePullRequestsToolWindow)
+map <leader><leader>j <Action>(GotoDeclaration)
+map <leader>jd <Action>(GotoDeclaration)
+map <leader>jt <Action>(GotoTypeDeclaration)
+map <leader>ji <Action>(GotoImplementation)
+map <leader>jr <Action>(GotoRelated)
+map <leader>js <Action>(GotoSuperMethod)
+map <leader>ju <Action>(ShowUsages)
+map <leader>jU <Action>(FindUsages)
+map <leader>jm <Action>(FileStructurePopup)
 
 " --------------------------------------
-" v - Vcs
+" k - Refactor
 " --------------------------------------
-map <leader><leader>v <Action>(Vcs.QuickListPopupAction)
-map <leader>va <Action>(Vcs.ToggleAmendCommitMode)
-map <leader>vb <Action>(Git.Branches)
-map <leader>vc <Action>(CheckinProject)
-map <leader>vd <Action>(Compare.SameVersion)
-map <leader>vf <Action>(Vcs.Log.ShowAllAffected)
-map <leader>vh <Action>(Vcs.ShowTabbedFileHistory)
-map <leader>vH <Action>(LocalHistory.ShowHistory)
-map <leader>vl <Action>(Vcs.RollbackChangedLines)
-map <leader>vm <Action>(Vcs.ShowMessageHistory)
-map <leader>vn <Action>(Git.CreateNewBranch)
-map <leader>vp <Action>(Vcs.Push)
-map <leader>vr <Action>(ChangesView.Revert)
-map <leader>vu <Action>(Vcs.UpdateProject)
+map <leader><leader>k <Action>(Refactorings.QuickListPopupAction)
+map <leader>kc <Action>(IntroduceConstant)
+map <leader>kf <Action>(IntroduceField)
+map <leader>ki <Action>(ExtractInterface)
+map <leader>kl <Action>(Inline)
+map <leader>km <Action>(ExtractMethod)
+map <leader>ko <Action>(Move)
+map <leader>kp <Action>(IntroduceParameter)
+map <leader>kr <Action>(RenameElement)
+map <leader>ks <Action>(ChangeSignature)
+map <leader>ku <Action>(MembersPullUp)
+map <leader>kv <Action>(IntroduceVariable)
+
+" --------------------------------------
+" l - ToolWindow
+" --------------------------------------
+map <leader><leader>l <Action>(HideAllWindows)
+map <leader>la <Action>(ActivateAIAssistantToolWindow)
+map <leader>lc <Action>(ActivateCommitToolWindow)
+map <leader>ld <Action>(ActivateDebugToolWindow)
+map <leader>le <Action>(ActivateProblemsViewToolWindow)
+map <leader>lf <Action>(ActivateFindToolWindow)
+map <leader>lp <Action>(ActivateProjectToolWindow)
+map <leader>lr <Action>(ActivateRunToolWindow)
+map <leader>lt <Action>(ActivateTerminalToolWindow)
+map <leader>lv <Action>(ActivateVersionControlToolWindow)
+map <leader>lV <Action>(ActivatePullRequestsToolWindow)
 
 " --------------------------------------
 " x - Close/Hide/Delete
