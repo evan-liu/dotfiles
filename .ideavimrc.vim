@@ -86,6 +86,7 @@ map gs <Action>(SelectInProjectView)
 map gS <Action>(SelectIn)
 
 map <leader><CR> <Action>(ShowIntentionActions)
+map <leader>w <Action>(SaveAll)
 
 " --------------------------------------
 " C-W - Window/Split
@@ -137,7 +138,7 @@ map <leader>fe <Action>(SearchEverywhere)
 map <leader>ff <Action>(GotoFile)
 map <leader>fs <Action>(GotoSymbol)
 map <leader>fa <Action>(GotoAction)
-map <leader>ft <Action>(TextSearchAction)
+map <leader>ft <Action>(FindInPath)
 
 map <leader>fp <Action>(ManageRecentProjects)
 map <leader>fS <Action>(Scratch.ShowFilesPopup)
@@ -216,6 +217,7 @@ map <leader><leader>l <Action>(HideAllWindows)
 map <leader>la <Action>(ActivateAIAssistantToolWindow)
 map <leader>lc <Action>(ActivateCommitToolWindow)
 map <leader>ld <Action>(ActivateDebugToolWindow)
+map <leader>lD <Action>(ActivateDatabaseToolWindow)
 map <leader>le <Action>(ActivateProblemsViewToolWindow)
 map <leader>lf <Action>(ActivateFindToolWindow)
 map <leader>lp <Action>(ActivateProjectToolWindow)
