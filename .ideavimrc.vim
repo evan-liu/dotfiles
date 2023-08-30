@@ -227,6 +227,16 @@ map <leader>lv <Action>(ActivateVersionControlToolWindow)
 map <leader>lV <Action>(ActivatePullRequestsToolWindow)
 
 " --------------------------------------
+" c - Code Completion
+" --------------------------------------
+map <leader><leader>c <Action>(CodeCompletion)
+map <leader>cc <Action>(CodeCompletion)
+map <leader>cC <Action>(SmartTypeCompletion)
+map <leader>cs <Action>(SurroundWith)
+map <leader>ct <Action>(InsertLiveTemplate)
+map <leader>cu <Action>(Unwrap)
+
+" --------------------------------------
 " x - Close/Hide/Delete
 " --------------------------------------
 map <leader><leader>x <Action>(CloseProject)
