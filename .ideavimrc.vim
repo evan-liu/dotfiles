@@ -70,6 +70,13 @@ set matchit
 set quickscope
 let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 
+" https://github.com/TheBlob42/idea-which-key
+set which-key
+set notimeout
+let g:WhichKey_ShowVimActions = "true"
+let g:WhichKey_DefaultDelay = 300
+let g:WhichKey_SortOrder = "by_key_prefix_first"
+
 " ==============================================================================
 " Others Mappings
 " ==============================================================================
@@ -112,13 +119,11 @@ map <D-A-C-b> <Plug>AllOccurrences
 map <leader><leader>y <Action>(CopyReferencePopupGroup)
 map <leader>y "+y
 map <leader>Y "+Y
-map <leader>d "_d
-map <leader>D "_D
 map <leader>p "+p
 map <leader>P "+P
 
-" --------------------------------------
-" e - Execution/Run/Debug
+" ---------------------------- e -------
+let g:WhichKeyDesc_e = "<leader>e Execution/Run/Debug"
 " --------------------------------------
 map <leader><leader>e <Action>(ChooseRunConfiguration)
 map <leader><leader>E <Action>(ChooseDebugConfiguration)
@@ -129,8 +134,8 @@ map <leader>er <Action>(Run)
 map <leader>eR <Action>(RunClass)
 map <leader>ex <Action>(Stop)
 
-" --------------------------------------
-" f - Find/Search
+" ----------------------------- f ------
+let g:WhichKeyDesc_f = "<leader>f Find/Search"
 " --------------------------------------
 map <leader><leader>f <Plug>(easymotion-s)
 map <leader>fc <Action>(GotoClass)
@@ -143,8 +148,8 @@ map <leader>ft <Action>(FindInPath)
 map <leader>fp <Action>(ManageRecentProjects)
 map <leader>fS <Action>(Scratch.ShowFilesPopup)
 
-" --------------------------------------
-" d - Doc/Info
+" ----------------------------- d ------
+let g:WhichKeyDesc_d = "<leader>d Doc/Info"
 " --------------------------------------
 map <leader><leader>d <Action>(QuickJavaDoc)
 map <leader>di <Action>(QuickImplementations)
@@ -152,8 +157,8 @@ map <leader>de <Action>(ShowErrorDescription)
 map <leader>dd <Action>(QuickJavaDoc)
 map <leader>dp <Action>(ParameterInfo)
 
-" --------------------------------------
-" s - Source Control
+" ----------------------------- s ------
+let g:WhichKeyDesc_s = "<leader>s Source Control"
 " --------------------------------------
 map <leader><leader>s <Action>(Vcs.QuickListPopupAction)
 map <leader>sa <Action>(Vcs.ToggleAmendCommitMode)
@@ -170,8 +175,8 @@ map <leader>sp <Action>(Vcs.Push)
 map <leader>sr <Action>(ChangesView.Revert)
 map <leader>su <Action>(Vcs.UpdateProject)
 
-" --------------------------------------
-" a - SwitchCase
+" ----------------------------- a ------
+let g:WhichKeyDesc_a = "<leader>a SwitchCase"
 " --------------------------------------
 map <leader><leader>a <Action>(osmedile.intellij.stringmanip.SwitchCasePopup)
 map <leader>ac <Action>(StringManipulation.ToCamelCase)
@@ -181,8 +186,8 @@ map <leader>ap <Action>(StringManipulation.ToPascalCase)
 map <leader>aC <Action>(osmedile.intellij.stringmanip.WordsCapitalizeAction)
 map <leader>aS <Action>(StringManipulation.ToScreamingSnakeCase)
 
-" --------------------------------------
-" j - Jump/Goto (Code)
+" ----------------------------- j ------
+let g:WhichKeyDesc_j = "<leader>j Jump/Goto (Code)"
 " --------------------------------------
 map <leader><leader>j <Action>(GotoDeclaration)
 map <leader>jd <Action>(GotoDeclaration)
@@ -194,8 +199,8 @@ map <leader>ju <Action>(ShowUsages)
 map <leader>jU <Action>(FindUsages)
 map <leader>jm <Action>(FileStructurePopup)
 
-" --------------------------------------
-" k - Refactor
+" ----------------------------- k ------
+let g:WhichKeyDesc_k = "<leader>k Refactor"
 " --------------------------------------
 map <leader><leader>k <Action>(Refactorings.QuickListPopupAction)
 map <leader>kc <Action>(IntroduceConstant)
@@ -210,8 +215,8 @@ map <leader>ks <Action>(ChangeSignature)
 map <leader>ku <Action>(MembersPullUp)
 map <leader>kv <Action>(IntroduceVariable)
 
-" --------------------------------------
-" l - ToolWindow
+" ----------------------------- l ------
+let g:WhichKeyDesc_l = "<leader>l ToolWindow"
 " --------------------------------------
 map <leader><leader>l <Action>(HideAllWindows)
 map <leader>la <Action>(ActivateAIAssistantToolWindow)
@@ -226,18 +231,19 @@ map <leader>lt <Action>(ActivateTerminalToolWindow)
 map <leader>lv <Action>(ActivateVersionControlToolWindow)
 map <leader>lV <Action>(ActivatePullRequestsToolWindow)
 
-" --------------------------------------
-" c - Code Completion
+" ----------------------------- c ------
+let g:WhichKeyDesc_c = "<leader>c Code/Completion"
 " --------------------------------------
 map <leader><leader>c <Action>(CodeCompletion)
 map <leader>cc <Action>(CodeCompletion)
 map <leader>cC <Action>(SmartTypeCompletion)
+map <leader>cf <Action>(ReformatCode)
 map <leader>cs <Action>(SurroundWith)
 map <leader>ct <Action>(InsertLiveTemplate)
 map <leader>cu <Action>(Unwrap)
 
-" --------------------------------------
-" x - Close/Hide/Delete
+" ----------------------------- x ------
+let g:WhichKeyDesc_x = "<leader>x Close/Hide/Delete"
 " --------------------------------------
 map <leader><leader>x <Action>(CloseProject)
 map <leader>xn <Action>(CloseAllNotifications)
