@@ -251,6 +251,7 @@ let g:WhichKeyDesc_x = "<leader>x Close/Hide/Delete"
 " --------------------------------------
 map <leader><leader>x <Action>(CloseProject)
 map <leader>xn <Action>(CloseAllNotifications)
+map <leader>xx <Action>(CloseContent)
 
 " --------------------------------------
 " \ - IdeaVim
