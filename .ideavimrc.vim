@@ -173,6 +173,7 @@ map <leader>sm <Action>(Vcs.ShowMessageHistory)
 map <leader>sn <Action>(Git.CreateNewBranch)
 map <leader>sp <Action>(Vcs.Push)
 map <leader>sr <Action>(ChangesView.Revert)
+map <leader>st <Action>(Git.Tag)
 map <leader>su <Action>(Vcs.UpdateProject)
 
 " ----------------------------- a ------
