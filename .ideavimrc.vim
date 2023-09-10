@@ -122,7 +122,7 @@ map <leader>Y "+Y
 map <leader>p "+p
 map <leader>P "+P
 
-" ---------------------------- e -------
+" ----------------------------- e ------
 let g:WhichKeyDesc_e = "<leader>e Execution/Run/Debug"
 " --------------------------------------
 map <leader><leader>e <Action>(ChooseRunConfiguration)
