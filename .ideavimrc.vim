@@ -194,9 +194,10 @@ map <leader>aS <Action>(StringManipulation.ToScreamingSnakeCase)
 " ----------------------------- j ------
 let g:WhichKeyDesc_j = "<leader>j Jump/Goto (Code)"
 " --------------------------------------
-map <leader><leader>j <Action>(GotoDeclaration)
+map <leader><leader>j <Action>(EditorPopupMenu.GoTo)
 map <leader>jd <Action>(GotoDeclaration)
 map <leader>jt <Action>(GotoTypeDeclaration)
+map <leader>jT <Action>(GotoTest)
 map <leader>ji <Action>(GotoImplementation)
 map <leader>jr <Action>(GotoRelated)
 map <leader>js <Action>(GotoSuperMethod)
@@ -232,11 +233,16 @@ map <leader>le <Action>(ActivateProblemsViewToolWindow)
 map <leader>lf <Action>(ActivateFindToolWindow)
 map <leader>lp <Action>(ActivateProjectToolWindow)
 map <leader>lr <Action>(ActivateRunToolWindow)
-map <leader>lss <Action>(ActivateServicesToolWindow)
+map <leader>ls<leader> <Action>(ActivateServicesToolWindow)
 map <leader>lsd <Action>(ServiceView.ActivateDatabaseServiceViewContributor)
 map <leader>lt <Action>(ActivateTerminalToolWindow)
 map <leader>lv <Action>(ActivateVersionControlToolWindow)
 map <leader>lV <Action>(ActivatePullRequestsToolWindow)
+if &ide =~? 'rider'
+  map <leader>lE <Action>(ActivateEndpointsToolWindow)
+  map <leader>ln <Action>(ActivateNuGetToolWindow)
+  map <leader>lu <Action>(ActivateUnitTestsToolWindow)
+endif
 
 " ----------------------------- c ------
 let g:WhichKeyDesc_c = "<leader>c Code/Completion"
