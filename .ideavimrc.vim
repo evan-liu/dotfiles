@@ -221,6 +221,9 @@ map <leader>kr <Action>(RenameElement)
 map <leader>ks <Action>(ChangeSignature)
 map <leader>ku <Action>(MembersPullUp)
 map <leader>kv <Action>(IntroduceVariable)
+if &ide =~? 'webstorm'
+  map <leader>kt <Action>(TypeScriptExtractTypeAlias)
+endif
 
 " ----------------------------- l ------
 let g:WhichKeyDesc_l = "<leader>l ToolWindow"
