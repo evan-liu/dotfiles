@@ -211,6 +211,7 @@ let g:WhichKeyDesc_k = "<leader>k Refactor"
 " --------------------------------------
 map <leader><leader>k <Action>(Refactorings.QuickListPopupAction)
 map <leader>kc <Action>(IntroduceConstant)
+map <leader>kd <Action>(SafeDelete)
 map <leader>kf <Action>(IntroduceField)
 map <leader>ki <Action>(ExtractInterface)
 map <leader>kl <Action>(Inline)
