@@ -206,6 +206,7 @@ map <leader>js <Action>(GotoSuperMethod)
 map <leader>ju <Action>(ShowUsages)
 map <leader>jU <Action>(FindUsages)
 map <leader>jm <Action>(FileStructurePopup)
+map <leader>jn <Action>(ShowNavBar)
 
 " ----------------------------- k ------
 let g:WhichKeyDesc_k = "<leader>k Refactor"
