@@ -156,6 +156,7 @@ map <leader>di <Action>(QuickImplementations)
 map <leader>de <Action>(ShowErrorDescription)
 map <leader>dd <Action>(QuickJavaDoc)
 map <leader>dp <Action>(ParameterInfo)
+map <leader>dh <Action>(ShowHoverInfo)
 
 " ----------------------------- s ------
 let g:WhichKeyDesc_s = "<leader>s Source Control"
