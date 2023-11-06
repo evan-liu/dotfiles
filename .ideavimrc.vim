@@ -163,6 +163,7 @@ let g:WhichKeyDesc_s = "<leader>s Source Control"
 " --------------------------------------
 map <leader><leader>s <Action>(Vcs.QuickListPopupAction)
 map <leader>sa <Action>(Vcs.ToggleAmendCommitMode)
+map <leader>sA <Action>(Annotate)
 map <leader>sb <Action>(Git.Branches)
 map <leader>sc <Action>(CheckinProject)
 map <leader>sd <Action>(Compare.SameVersion)
