@@ -252,6 +252,10 @@ if &ide =~? 'rider'
   map <leader>ln <Action>(ActivateNuGetToolWindow)
   map <leader>lu <Action>(ActivateUnitTestsToolWindow)
 endif
+if &ide =~? 'pycharm'
+  map <leader>lC <Action>(ActivatePythonConsoleToolWindow)
+  map <leader>lP <Action>(ActivatePythonPackagesToolWindow)
+endif
 
 " ----------------------------- c ------
 let g:WhichKeyDesc_c = "<leader>c Code/Completion"
