@@ -276,6 +276,19 @@ map <leader><leader>x <Action>(CloseProject)
 map <leader>xn <Action>(CloseAllNotifications)
 map <leader>xx <Action>(CloseContent)
 
+" ----------------------------- n ------
+let g:WhichKeyDesc_n = "<leader>n New/Generate"
+" --------------------------------------
+map <leader><leader>n <Action>(NewElementSamePlace)
+map <leader>nd <Action>(NewDir)
+map <leader>nf <Action>(NewFile)
+map <leader>ng <Action>(Generate)
+map <leader>no <Action>(OverrideMethods)
+map <leader>ns <Action>(NewScratchFile)
+if &ide =~? 'webstorm'
+  map <leader>ni <Action>(Generate.Missing.Members.TypeScript)
+endif
+
 " --------------------------------------
 " \ - IdeaVim
 " --------------------------------------
