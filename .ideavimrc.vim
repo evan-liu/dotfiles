@@ -148,6 +148,12 @@ map <leader>ft <Action>(FindInPath)
 map <leader>fp <Action>(ManageRecentProjects)
 map <leader>fS <Action>(Scratch.ShowFilesPopup)
 
+" ----------------------------- r ------
+let g:WhichKeyDesc_r = "<leader>r Replace"
+" --------------------------------------
+map <leader><leader>r <Action>(Replace)
+map <leader>rf <Action>(ReplaceInPath)
+
 " ----------------------------- d ------
 let g:WhichKeyDesc_d = "<leader>d Doc/Info"
 " --------------------------------------
