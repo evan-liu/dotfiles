@@ -246,6 +246,7 @@ map <leader>lc <Action>(ActivateCommitToolWindow)
 map <leader>ld <Action>(ActivateDebugToolWindow)
 map <leader>lD <Action>(ActivateDatabaseToolWindow)
 map <leader>le <Action>(ActivateProblemsViewToolWindow)
+map <leader>lE <Action>(ActivateEndpointsToolWindow)
 map <leader>lf <Action>(ActivateFindToolWindow)
 map <leader>lp <Action>(ActivateProjectToolWindow)
 map <leader>lr <Action>(ActivateRunToolWindow)
@@ -256,12 +257,10 @@ map <leader>lt <Action>(ActivateTerminalToolWindow)
 map <leader>lv <Action>(ActivateVersionControlToolWindow)
 map <leader>lV <Action>(ActivatePullRequestsToolWindow)
 if &ide =~? 'rider'
-  map <leader>lE <Action>(ActivateEndpointsToolWindow)
   map <leader>ln <Action>(ActivateNuGetToolWindow)
   map <leader>lu <Action>(ActivateUnitTestsToolWindow)
 endif
 if &ide =~? 'pycharm'
-  map <leader>lE <Action>(ActivateEndpointsToolWindow)
   map <leader>lC <Action>(ActivatePythonConsoleToolWindow)
   map <leader>lP <Action>(ActivatePythonPackagesToolWindow)
 endif
