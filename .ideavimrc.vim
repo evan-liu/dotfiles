@@ -261,6 +261,7 @@ if &ide =~? 'rider'
   map <leader>lu <Action>(ActivateUnitTestsToolWindow)
 endif
 if &ide =~? 'pycharm'
+  map <leader>lE <Action>(ActivateEndpointsToolWindow)
   map <leader>lC <Action>(ActivatePythonConsoleToolWindow)
   map <leader>lP <Action>(ActivatePythonPackagesToolWindow)
 endif
