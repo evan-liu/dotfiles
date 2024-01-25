@@ -242,6 +242,7 @@ let g:WhichKeyDesc_l = "<leader>l ToolWindow"
 " --------------------------------------
 map <leader><leader>l <Action>(HideAllWindows)
 map <leader>la <Action>(ActivateAIAssistantToolWindow)
+map <leader>lb <Action>(ActivateBuildToolWindow)
 map <leader>lc <Action>(ActivateCommitToolWindow)
 map <leader>ld <Action>(ActivateDebugToolWindow)
 map <leader>lD <Action>(ActivateDatabaseToolWindow)
