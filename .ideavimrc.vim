@@ -133,6 +133,9 @@ map <leader>eD <Action>(DebugClass)
 map <leader>er <Action>(Run)
 map <leader>eR <Action>(RunClass)
 map <leader>ex <Action>(Stop)
+if &ide =~? 'RustRover'
+  map <leader>eb <Action>(Rust.Build)
+endif
 
 " ----------------------------- f ------
 let g:WhichKeyDesc_f = "<leader>f Find/Search"
@@ -233,7 +236,7 @@ map <leader>kR <Action>(RenameFile)
 map <leader>ks <Action>(ChangeSignature)
 map <leader>ku <Action>(MembersPullUp)
 map <leader>kv <Action>(IntroduceVariable)
-if &ide =~? 'webstorm'
+if &ide =~? 'WebStorm'
   map <leader>kt <Action>(TypeScriptExtractTypeAlias)
 endif
 
@@ -257,11 +260,11 @@ map <leader>lss <Action>(Vcs.Show.Shelf)
 map <leader>lt <Action>(ActivateTerminalToolWindow)
 map <leader>lv <Action>(ActivateVersionControlToolWindow)
 map <leader>lV <Action>(ActivatePullRequestsToolWindow)
-if &ide =~? 'rider'
+if &ide =~? 'Rider'
   map <leader>ln <Action>(ActivateNuGetToolWindow)
   map <leader>lu <Action>(ActivateUnitTestsToolWindow)
 endif
-if &ide =~? 'pycharm'
+if &ide =~? 'PyCharm'
   map <leader>lC <Action>(ActivatePythonConsoleToolWindow)
   map <leader>lP <Action>(ActivatePythonPackagesToolWindow)
 endif
@@ -294,7 +297,7 @@ map <leader>nf <Action>(NewFile)
 map <leader>ng <Action>(Generate)
 map <leader>no <Action>(OverrideMethods)
 map <leader>ns <Action>(NewScratchFile)
-if &ide =~? 'webstorm'
+if &ide =~? 'WebStorm'
   map <leader>ni <Action>(Generate.Missing.Members.TypeScript)
 endif
 
