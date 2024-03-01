@@ -183,6 +183,8 @@ map <leader>sn <Action>(Git.CreateNewBranch)
 map <leader>sN <Action>(Github.Create.Pull.Request)
 map <leader>sp <Action>(Vcs.Push)
 map <leader>sr <Action>(ChangesView.Revert)
+map <leader>ss <Action>(Git.Stash)
+map <leader>sS <Action>(Git.Unstash)
 map <leader>st <Action>(Git.Tag)
 map <leader>su <Action>(Vcs.UpdateProject)
 
