@@ -138,15 +138,20 @@ map <leader>ex <Action>(Stop)
 let g:WhichKeyDesc_f = "<leader>f Find/Search"
 " --------------------------------------
 map <leader><leader>f <Plug>(easymotion-s)
+
 map <leader>fc <Action>(GotoClass)
-map <leader>fe <Action>(SearchEverywhere)
 map <leader>ff <Action>(GotoFile)
 map <leader>fs <Action>(GotoSymbol)
 map <leader>fa <Action>(GotoAction)
-map <leader>ft <Action>(FindInPath)
 
-map <leader>fp <Action>(ManageRecentProjects)
+map <leader>ft <Action>(FindInPath)
 map <leader>fS <Action>(Scratch.ShowFilesPopup)
+map <leader>fe <Action>(SearchEverywhere)
+
+map <leader>fr <Action>(RecentFiles)
+map <leader>fl <Action>(RecentLocations)
+map <leader>fv <Action>(RecentChangedFiles)
+map <leader>fp <Action>(ManageRecentProjects)
 
 " ----------------------------- r ------
 let g:WhichKeyDesc_r = "<leader>r Replace"
@@ -267,6 +272,14 @@ if &ide =~? 'pycharm'
   map <leader>lC <Action>(ActivatePythonConsoleToolWindow)
   map <leader>lP <Action>(ActivatePythonPackagesToolWindow)
 endif
+
+" ----------------------------- v ------
+let g:WhichKeyDesc_v = "<leader>v View
+" --------------------------------------
+map <leader><leader>v <Action>(ViewMenu)
+map <leader>vs <Action>(ViewStatusBar)
+map <leader>vt <Action>(ViewToolButtons)
+map <leader>vz <Action>(ChangeIdeScale)
 
 " ----------------------------- c ------
 let g:WhichKeyDesc_c = "<leader>c Code/Completion"
