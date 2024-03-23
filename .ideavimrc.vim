@@ -152,9 +152,9 @@ map <leader>ft <Action>(FindInPath)
 map <leader>fS <Action>(Scratch.ShowFilesPopup)
 map <leader>fe <Action>(SearchEverywhere)
 
-map <leader>fr <Action>(RecentFiles)
+map <leader>fj <Action>(RecentFiles)
+map <leader>fk <Action>(RecentChangedFiles)
 map <leader>fl <Action>(RecentLocations)
-map <leader>fv <Action>(RecentChangedFiles)
 map <leader>fp <Action>(ManageRecentProjects)
 
 " ----------------------------- r ------
