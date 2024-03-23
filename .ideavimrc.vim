@@ -87,8 +87,12 @@ map U <C-r>
 map <C-j> <C-d>zz
 map <C-k> <C-u>zz
 
+map <C-h> <Action>(Back)
+map <C-l> <Action>(Forward)
+
 map gb <Action>(Back)
 map gf <Action>(Forward)
+
 map gs <Action>(SelectInProjectView)
 map gS <Action>(SelectIn)
 
