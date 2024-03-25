@@ -141,7 +141,8 @@ map <leader>ex <Action>(Stop)
 " ----------------------------- f ------
 let g:WhichKeyDesc_f = "<leader>f Find/Search"
 " --------------------------------------
-map <leader><leader>f <Plug>(easymotion-s)
+map <leader><leader>f <Action>(SearchEverywhere)
+map <leader>fe <Plug>(easymotion-s)
 
 map <leader>fc <Action>(GotoClass)
 map <leader>ff <Action>(GotoFile)
@@ -150,7 +151,6 @@ map <leader>fa <Action>(GotoAction)
 
 map <leader>ft <Action>(FindInPath)
 map <leader>fS <Action>(Scratch.ShowFilesPopup)
-map <leader>fe <Action>(SearchEverywhere)
 
 map <leader>fj <Action>(RecentFiles)
 map <leader>fk <Action>(RecentChangedFiles)
