@@ -280,8 +280,10 @@ endif
 let g:WhichKeyDesc_v = "<leader>v View
 " --------------------------------------
 map <leader><leader>v <Action>(ViewMenu)
-map <leader>vg <Action>(EditorToggleShowGutterIcons)
-map <leader>vl <Action>(EditorToggleShowLineNumbers)
+map <leader>vg <Action>(ShowGutterIconsSettings)
+map <leader>vi <Action>(EditorGutterToggleGlobalIndentLines)
+map <leader>vl <Action>(EditorGutterToggleGlobalStickyLines)
+map <leader>vn <Action>(EditorGutterToggleGlobalLineNumbers)
 map <leader>vs <Action>(ViewStatusBar)
 map <leader>vt <Action>(ViewToolButtons)
 map <leader>vz <Action>(ChangeIdeScale)
