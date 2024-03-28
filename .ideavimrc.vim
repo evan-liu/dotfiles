@@ -281,6 +281,8 @@ endif
 let g:WhichKeyDesc_v = "<leader>v View
 " --------------------------------------
 map <leader><leader>v <Action>(ViewMenu)
+map <leader>vg <Action>(EditorToggleShowGutterIcons)
+map <leader>vl <Action>(EditorToggleShowLineNumbers)
 map <leader>vs <Action>(ViewStatusBar)
 map <leader>vt <Action>(ViewToolButtons)
 map <leader>vz <Action>(ChangeIdeScale)
