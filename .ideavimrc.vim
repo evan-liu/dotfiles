@@ -12,7 +12,6 @@ let mapleader=" "
 set incsearch
 set scrolloff=5
 set showmode
-set number relativenumber
 
 " ==============================================================================
 " Idea settings
