@@ -25,6 +25,12 @@
     "folds": true
   },
 
+  "terminal": {
+    "env": {
+      "GIT_EDITOR": "zed --wait"
+    }
+  },
+
   "chat_panel": {
     "button": false
   },

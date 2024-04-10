@@ -20,6 +20,9 @@
       "shift-cmd-j": "editor::MoveLineDown",
       "shift-cmd-k": "editor::MoveLineUp",
 
+      "alt-ctrl-j": "editor::GoToDiagnostic",
+      "alt-ctrl-k": "editor::GoToPrevDiagnostic",
+
       "cmd-alt-ctrl-j": "editor::AddSelectionBelow",
       "cmd-alt-ctrl-k": "editor::AddSelectionAbove",
       "cmd-alt-ctrl-f": "editor::SelectNext",
@@ -75,6 +78,18 @@
       "space z K": "zed::OpenDefaultKeymap",
       "space z s": "zed::OpenSettings",
       "space z S": "zed::OpenDefaultSettings"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal",
+    "bindings": {
+      "g c c": "editor::ToggleComments"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual",
+    "bindings": {
+      "g c": "editor::ToggleComments"
     }
   }
 ]
