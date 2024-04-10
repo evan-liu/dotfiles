@@ -1,0 +1,80 @@
+[
+  {
+    "context": "Editor",
+    "bindings": {
+      "shift-u": "editor::Redo",
+      "shift-j": "editor::JoinLines",
+
+      "ctrl-j": "vim::ScrollDown",
+      "ctrl-k": "vim::ScrollUp",
+
+      "ctrl-h": "pane::GoBack",
+      "ctrl-l": "pane::GoForward",
+
+      "cmd-j": ["editor::SelectNext", { "replace_newest": true }],
+      "cmd-k cmd-k": ["editor::SelectPrevious", { "replace_newest": true }],
+
+      "alt-j": "editor::SelectSmallerSyntaxNode",
+      "alt-k": "editor::SelectLargerSyntaxNode",
+
+      "shift-cmd-j": "editor::MoveLineDown",
+      "shift-cmd-k": "editor::MoveLineUp",
+
+      "cmd-alt-ctrl-j": "editor::AddSelectionBelow",
+      "cmd-alt-ctrl-k": "editor::AddSelectionAbove",
+      "cmd-alt-ctrl-f": "editor::SelectNext",
+
+      "alt-w": "workspace::CloseInactiveTabsAndPanes"
+    }
+  },
+  {
+    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "bindings": {
+      "g s": "pane::RevealInProjectPanel",
+
+      "space w": "workspace::SaveAll",
+      "space enter": "editor::ToggleCodeActions",
+
+      "space f f": "file_finder::Toggle",
+      "space f a": "command_palette::Toggle",
+      "space f p": "projects::OpenRecent",
+
+      "space d h": "editor::Hover",
+
+      "space s b": "branches::OpenRecent",
+
+      "space j d": "editor::GoToDefinition",
+      "space j D": "editor::GoToDefinitionSplit",
+      "space j t": "editor::GoToTypeDefinition",
+      "space j T": "editor::GoToTypeDefinitionSplit",
+      "space j i": "editor::GoToImplementation",
+      "space j I": "editor::GoToImplementationSplit",
+
+      "space j u": "editor::FindAllReferences",
+      "space j m": "outline::Toggle",
+
+      "space k r": "editor::Rename",
+
+      "space space l": "workspace::CloseAllDocks",
+      "space l p": "project_panel::ToggleFocus",
+
+      "space space e": "task::Spawn",
+
+      "space x x": "pane::CloseActiveItem",
+      "space space x": "workspace::CloseWindow",
+
+      "space v l": "workspace::ToggleLeftDock",
+      "space v r": "workspace::ToggleRightDock",
+      "space v b": "workspace::ToggleBottomDock",
+
+      "space v h": "zed::Hide",
+      "space v t": "theme_selector::Toggle",
+      "space v n": "editor::ToggleLineNumbers",
+
+      "space z k": "zed::OpenKeymap",
+      "space z K": "zed::OpenDefaultKeymap",
+      "space z s": "zed::OpenSettings",
+      "space z S": "zed::OpenDefaultSettings"
+    }
+  }
+]
