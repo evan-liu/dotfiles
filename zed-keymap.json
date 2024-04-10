@@ -73,6 +73,7 @@
       "space v h": "zed::Hide",
       "space v t": "theme_selector::Toggle",
       "space v n": "editor::ToggleLineNumbers",
+      "space v w": "editor::ToggleSoftWrap",
 
       "space z k": "zed::OpenKeymap",
       "space z K": "zed::OpenDefaultKeymap",
