@@ -27,6 +27,8 @@
       "cmd-alt-ctrl-k": "editor::AddSelectionAbove",
       "cmd-alt-ctrl-f": "editor::SelectNext",
 
+      "ctrl-w r": "pane::SplitRight",
+
       "alt-w": "workspace::CloseInactiveTabsAndPanes"
     }
   },
