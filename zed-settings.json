@@ -1,22 +1,18 @@
 {
-  "collaboration_panel": {
-    "dock": "right"
-  },
-  "project_panel": {
-    "dock": "right"
-  },
   "base_keymap": "JetBrains",
-  "theme": "One Dark",
 
   "vim_mode": true,
   "vim": {
     "use_system_clipboard": "on_yank"
   },
 
-  "features": {
-    "copilot": false
+  "prettier": {
+    "singleQuote": true,
+    "semi": false,
+    "bracketSameLine": true
   },
 
+  "theme": "One Dark",
   "ui_font_size": 16,
   "buffer_font_size": 18,
 
@@ -24,26 +20,22 @@
     "breadcrumbs": false,
     "quick_actions": false
   },
-
   "gutter": {
     "line_numbers": false,
     "code_actions": false,
     "folds": true
   },
 
-  "terminal": {
-    "env": {
-      "GIT_EDITOR": "zed --wait"
-    }
+  "collaboration_panel": {
+    "dock": "right"
   },
-
+  "project_panel": {
+    "dock": "right"
+  },
+  "features": {
+    "copilot": false
+  },
   "chat_panel": {
     "button": false
-  },
-
-  "prettier": {
-    "singleQuote": true,
-    "semi": false,
-    "bracketSameLine": true
   }
 }
