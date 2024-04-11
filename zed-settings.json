@@ -1,4 +1,10 @@
 {
+  "collaboration_panel": {
+    "dock": "right"
+  },
+  "project_panel": {
+    "dock": "right"
+  },
   "base_keymap": "JetBrains",
   "theme": "One Dark",
 
