@@ -30,7 +30,7 @@
     }
   },
   {
-    "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
+    "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
       "shift-u": "editor::Redo",
       "shift-j": "editor::JoinLines",
@@ -78,6 +78,7 @@
       "space v t": "theme_selector::Toggle",
       "space v n": "editor::ToggleLineNumbers",
       "space v w": "editor::ToggleSoftWrap",
+      "space v i": "editor::ToggleInlayHints",
 
       "space z k": "zed::OpenKeymap",
       "space z K": "zed::OpenDefaultKeymap",
@@ -95,6 +96,13 @@
     "context": "Editor && vim_mode == visual",
     "bindings": {
       "g c": "editor::ToggleComments"
+    }
+  },
+  {
+    "context": "Terminal",
+    "bindings": {
+      "escape": "terminal_panel::ToggleFocus",
+      "cmd-t": "workspace::NewTerminal"
     }
   }
 ]
