@@ -2,9 +2,6 @@
   {
     "context": "Editor",
     "bindings": {
-      "shift-u": "editor::Redo",
-      "shift-j": "editor::JoinLines",
-
       "ctrl-j": "vim::ScrollDown",
       "ctrl-k": "vim::ScrollUp",
 
@@ -35,6 +32,9 @@
   {
     "context": "Editor && (vim_mode == normal || vim_mode == visual) && !VimWaiting && !menu",
     "bindings": {
+      "shift-u": "editor::Redo",
+      "shift-j": "editor::JoinLines",
+
       "g s": "pane::RevealInProjectPanel",
 
       "space w": "workspace::SaveAll",
