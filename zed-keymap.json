@@ -62,6 +62,8 @@
 
       "space space l": "workspace::CloseAllDocks",
       "space l p": "project_panel::ToggleFocus",
+      "space l t": "terminal_panel::ToggleFocus",
+      "space l c": "collab_panel::ToggleFocus",
 
       "space space e": "task::Spawn",
 
