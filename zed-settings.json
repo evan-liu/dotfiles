@@ -23,7 +23,7 @@
   "gutter": {
     "line_numbers": false,
     "code_actions": false,
-    "folds": true
+    "folds": false
   },
 
   "collaboration_panel": {
