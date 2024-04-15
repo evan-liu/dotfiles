@@ -43,6 +43,7 @@
       "space f f": "file_finder::Toggle",
       "space f a": "command_palette::Toggle",
       "space f p": "projects::OpenRecent",
+      "space f t": "pane::DeploySearch",
 
       "space d h": "editor::Hover",
 
