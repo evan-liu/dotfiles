@@ -20,6 +20,9 @@
     "breadcrumbs": false,
     "quick_actions": false
   },
+  "tab_bar": {
+    "show_nav_history_buttons": false
+  },
   "gutter": {
     "line_numbers": false,
     "code_actions": false,
