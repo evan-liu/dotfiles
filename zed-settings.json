@@ -40,5 +40,11 @@
   },
   "chat_panel": {
     "button": false
+  },
+
+  "language_overrides": {
+    "Markdown": {
+      "soft_wrap": "editor_width"
+    }
   }
 }
