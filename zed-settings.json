@@ -17,7 +17,6 @@
   "buffer_font_size": 18,
 
   "toolbar": {
-    "breadcrumbs": true,
     "quick_actions": false
   },
   "tab_bar": {
