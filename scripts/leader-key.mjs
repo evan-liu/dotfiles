@@ -6,10 +6,12 @@ main().catch((err) => {
 })
 
 async function main() {
+  console.log('Adding Leader Key Mapping to README')
   const mapping = {}
   await readIdea(mapping)
   await readZed(mapping)
   await write(mapping)
+  console.log('Done')
 }
 
 async function readIdea(mapping) {
@@ -55,13 +57,15 @@ async function write(mapping) {
 `
 
   const addLine = (keys, { Zed, IdeaVim }) => {
+    const ideaActionMatch = IdeaVim?.match(/<Action>\((.*)\)/)
+    const ideaAction = ideaActionMatch?.[1] || IdeaVim
     result += [
       '| ',
-      keys.map((key) => '`' + key + '`').join(' '),
+      '`' + keys.join('') + '`',
       ' | ',
       Zed ? '`' + Zed + '`' : '',
       ' | ',
-      IdeaVim ? '`' + IdeaVim + '`' : '',
+      ideaAction ? '`' + ideaAction + '`' : '',
       ' |\n',
     ].join('')
   }

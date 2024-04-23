@@ -54,156 +54,156 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 
 ## Leader Key Mapping
 
-| Key         | Zed                               | IdeaVim                                                         |
-| ----------- | --------------------------------- | --------------------------------------------------------------- |
-| `␣` `␣` `y` |                                   | `<Action>(CopyReferencePopupGroup)`                             |
-|             |                                   |                                                                 |
-| `␣` `␣` `e` | `task::Spawn`                     | `<Action>(ChooseRunConfiguration)`                              |
-| `␣` `e` `e` |                                   | `<Action>(editRunConfigurations)`                               |
-| `␣` `e` `d` |                                   | `<Action>(Debug)`                                               |
-| `␣` `e` `D` |                                   | `<Action>(DebugClass)`                                          |
-| `␣` `e` `r` |                                   | `<Action>(Run)`                                                 |
-| `␣` `e` `R` |                                   | `<Action>(RunClass)`                                            |
-| `␣` `e` `x` |                                   | `<Action>(Stop)`                                                |
-|             |                                   |                                                                 |
-| `␣` `␣` `E` |                                   | `<Action>(ChooseDebugConfiguration)`                            |
-|             |                                   |                                                                 |
-| `␣` `␣` `f` |                                   | `<Action>(SearchEverywhere)`                                    |
-| `␣` `f` `e` |                                   | `<Plug>(easymotion-s)`                                          |
-| `␣` `f` `c` |                                   | `<Action>(GotoClass)`                                           |
-| `␣` `f` `f` | `file_finder::Toggle`             | `<Action>(GotoFile)`                                            |
-| `␣` `f` `s` |                                   | `<Action>(GotoSymbol)`                                          |
-| `␣` `f` `a` | `command_palette::Toggle`         | `<Action>(GotoAction)`                                          |
-| `␣` `f` `t` | `pane::DeploySearch`              | `<Action>(FindInPath)`                                          |
-| `␣` `f` `S` |                                   | `<Action>(Scratch.ShowFilesPopup)`                              |
-| `␣` `f` `j` |                                   | `<Action>(RecentFiles)`                                         |
-| `␣` `f` `k` |                                   | `<Action>(RecentChangedFiles)`                                  |
-| `␣` `f` `l` |                                   | `<Action>(RecentLocations)`                                     |
-| `␣` `f` `p` | `projects::OpenRecent`            | `<Action>(ManageRecentProjects)`                                |
-|             |                                   |                                                                 |
-| `␣` `␣` `r` |                                   | `<Action>(Replace)`                                             |
-| `␣` `r` `f` |                                   | `<Action>(ReplaceInPath)`                                       |
-|             |                                   |                                                                 |
-| `␣` `␣` `d` |                                   | `<Action>(QuickJavaDoc)`                                        |
-| `␣` `d` `i` |                                   | `<Action>(QuickImplementations)`                                |
-| `␣` `d` `e` |                                   | `<Action>(ShowErrorDescription)`                                |
-| `␣` `d` `d` |                                   | `<Action>(QuickJavaDoc)`                                        |
-| `␣` `d` `p` |                                   | `<Action>(ParameterInfo)`                                       |
-| `␣` `d` `h` | `editor::Hover`                   | `<Action>(ShowHoverInfo)`                                       |
-|             |                                   |                                                                 |
-| `␣` `␣` `s` |                                   | `<Action>(Vcs.QuickListPopupAction)`                            |
-| `␣` `s` `a` |                                   | `<Action>(Vcs.ToggleAmendCommitMode)`                           |
-| `␣` `s` `b` | `branches::OpenRecent`            | `<Action>(Git.Branches)`                                        |
-| `␣` `s` `B` | `editor::ToggleGitBlame`          | `<Action>(Annotate)`                                            |
-| `␣` `s` `c` |                                   | `<Action>(CheckinProject)`                                      |
-| `␣` `s` `d` |                                   | `<Action>(Compare.SameVersion)`                                 |
-| `␣` `s` `f` |                                   | `<Action>(Git.Fetch)`                                           |
-| `␣` `s` `F` |                                   | `<Action>(Vcs.Log.ShowAllAffected)`                             |
-| `␣` `s` `h` |                                   | `<Action>(Vcs.ShowTabbedFileHistory)`                           |
-| `␣` `s` `H` |                                   | `<Action>(LocalHistory.ShowHistory)`                            |
-| `␣` `s` `l` |                                   | `<Action>(Vcs.RollbackChangedLines)`                            |
-| `␣` `s` `m` |                                   | `<Action>(Vcs.ShowMessageHistory)`                              |
-| `␣` `s` `n` |                                   | `<Action>(Git.CreateNewBranch)`                                 |
-| `␣` `s` `N` |                                   | `<Action>(Github.Create.Pull.Request)`                          |
-| `␣` `s` `p` |                                   | `<Action>(Vcs.Push)`                                            |
-| `␣` `s` `r` |                                   | `<Action>(ChangesView.Revert)`                                  |
-| `␣` `s` `s` |                                   | `<Action>(Git.Stash)`                                           |
-| `␣` `s` `S` |                                   | `<Action>(Git.Unstash)`                                         |
-| `␣` `s` `t` |                                   | `<Action>(Git.Tag)`                                             |
-| `␣` `s` `u` |                                   | `<Action>(Vcs.UpdateProject)`                                   |
-|             |                                   |                                                                 |
-| `␣` `␣` `a` |                                   | `<Action>(osmedile.intellij.stringmanip.SwitchCasePopup)`       |
-| `␣` `a` `c` |                                   | `<Action>(StringManipulation.ToCamelCase)`                      |
-| `␣` `a` `s` |                                   | `<Action>(StringManipulation.ToSnakeCase)`                      |
-| `␣` `a` `k` |                                   | `<Action>(StringManipulation.ToKebabCase)`                      |
-| `␣` `a` `p` |                                   | `<Action>(StringManipulation.ToPascalCase)`                     |
-| `␣` `a` `l` |                                   | `<Action>(osmedile.intellij.stringmanip.ToLowerCaseAction)`     |
-| `␣` `a` `u` |                                   | `<Action>(osmedile.intellij.stringmanip.ToUpperCaseAction)`     |
-| `␣` `a` `r` |                                   | `<Action>(osmedile.intellij.stringmanip.SwapCaseAction)`        |
-| `␣` `a` `C` |                                   | `<Action>(osmedile.intellij.stringmanip.WordsCapitalizeAction)` |
-| `␣` `a` `S` |                                   | `<Action>(StringManipulation.ToScreamingSnakeCase)`             |
-|             |                                   |                                                                 |
-| `␣` `␣` `j` |                                   | `<Action>(EditorPopupMenu.GoTo)`                                |
-| `␣` `j` `d` | `editor::GoToDefinition`          | `<Action>(GotoDeclaration)`                                     |
-| `␣` `j` `t` | `editor::GoToTypeDefinition`      | `<Action>(GotoTypeDeclaration)`                                 |
-| `␣` `j` `T` | `editor::GoToTypeDefinitionSplit` | `<Action>(GotoTest)`                                            |
-| `␣` `j` `i` | `editor::GoToImplementation`      | `<Action>(GotoImplementation)`                                  |
-| `␣` `j` `o` |                                   | `<Action>(RevealGroup)`                                         |
-| `␣` `j` `r` |                                   | `<Action>(GotoRelated)`                                         |
-| `␣` `j` `s` |                                   | `<Action>(GotoSuperMethod)`                                     |
-| `␣` `j` `u` | `editor::FindAllReferences`       | `<Action>(ShowUsages)`                                          |
-| `␣` `j` `U` |                                   | `<Action>(FindUsages)`                                          |
-| `␣` `j` `m` | `outline::Toggle`                 | `<Action>(FileStructurePopup)`                                  |
-| `␣` `j` `n` |                                   | `<Action>(ShowNavBar)`                                          |
-| `␣` `j` `D` | `editor::GoToDefinitionSplit`     |                                                                 |
-| `␣` `j` `I` | `editor::GoToImplementationSplit` |                                                                 |
-|             |                                   |                                                                 |
-| `␣` `␣` `k` |                                   | `<Action>(Refactorings.QuickListPopupAction)`                   |
-| `␣` `k` `c` |                                   | `<Action>(IntroduceConstant)`                                   |
-| `␣` `k` `d` |                                   | `<Action>(SafeDelete)`                                          |
-| `␣` `k` `f` |                                   | `<Action>(IntroduceField)`                                      |
-| `␣` `k` `i` |                                   | `<Action>(ExtractInterface)`                                    |
-| `␣` `k` `l` |                                   | `<Action>(Inline)`                                              |
-| `␣` `k` `m` |                                   | `<Action>(ExtractMethod)`                                       |
-| `␣` `k` `o` |                                   | `<Action>(Move)`                                                |
-| `␣` `k` `p` |                                   | `<Action>(IntroduceParameter)`                                  |
-| `␣` `k` `r` | `editor::Rename`                  | `<Action>(RenameElement)`                                       |
-| `␣` `k` `R` |                                   | `<Action>(RenameFile)`                                          |
-| `␣` `k` `s` |                                   | `<Action>(ChangeSignature)`                                     |
-| `␣` `k` `u` |                                   | `<Action>(MembersPullUp)`                                       |
-| `␣` `k` `v` |                                   | `<Action>(IntroduceVariable)`                                   |
-|             |                                   |                                                                 |
-| `␣` `␣` `l` | `workspace::CloseAllDocks`        | `<Action>(HideAllWindows)`                                      |
-| `␣` `l` `a` |                                   | `<Action>(ActivateAIAssistantToolWindow)`                       |
-| `␣` `l` `A` |                                   | `<Action>(ActivateHTTPClientAuthenticationLogToolWindow)`       |
-| `␣` `l` `b` |                                   | `<Action>(ActivateBuildToolWindow)`                             |
-| `␣` `l` `B` |                                   | `<Action>(ActivateBookmarksToolWindow)`                         |
-| `␣` `l` `d` |                                   | `<Action>(ActivateDebugToolWindow)`                             |
-| `␣` `l` `D` |                                   | `<Action>(ActivateDatabaseToolWindow)`                          |
-| `␣` `l` `e` | `diagnostics::Deploy`             | `<Action>(ActivateProblemsViewToolWindow)`                      |
-| `␣` `l` `E` |                                   | `<Action>(ActivateEndpointsToolWindow)`                         |
-| `␣` `l` `f` |                                   | `<Action>(ActivateFindToolWindow)`                              |
-| `␣` `l` `p` | `project_panel::ToggleFocus`      | `<Action>(ActivateProjectToolWindow)`                           |
-| `␣` `l` `r` |                                   | `<Action>(ActivateRunToolWindow)`                               |
-| `␣` `l` `t` | `terminal_panel::ToggleFocus`     | `<Action>(ActivateTerminalToolWindow)`                          |
-| `␣` `l` `v` |                                   | `<Action>(ActivateVersionControlToolWindow)`                    |
-| `␣` `l` `V` |                                   | `<Action>(ActivatePullRequestsToolWindow)`                      |
-| `␣` `l` `c` | `collab_panel::ToggleFocus`       |                                                                 |
-|             |                                   |                                                                 |
-| `␣` `␣` `v` |                                   | `<Action>(ViewMenu)`                                            |
-| `␣` `v` `g` |                                   | `<Action>(ShowGutterIconsSettings)`                             |
-| `␣` `v` `i` | `editor::ToggleInlayHints`        | `<Action>(EditorGutterToggleGlobalIndentLines)`                 |
-| `␣` `v` `l` | `workspace::ToggleLeftDock`       | `<Action>(EditorGutterToggleGlobalStickyLines)`                 |
-| `␣` `v` `n` | `editor::ToggleLineNumbers`       | `<Action>(EditorGutterToggleGlobalLineNumbers)`                 |
-| `␣` `v` `w` | `editor::ToggleSoftWrap`          | `<Action>(EditorToggleUseSoftWraps)`                            |
-| `␣` `v` `s` |                                   | `<Action>(ViewStatusBar)`                                       |
-| `␣` `v` `t` | `theme_selector::Toggle`          | `<Action>(ViewToolButtons)`                                     |
-| `␣` `v` `z` |                                   | `<Action>(ChangeIdeScale)`                                      |
-| `␣` `v` `r` | `workspace::ToggleRightDock`      |                                                                 |
-| `␣` `v` `b` | `workspace::ToggleBottomDock`     |                                                                 |
-| `␣` `v` `h` | `zed::Hide`                       |                                                                 |
-|             |                                   |                                                                 |
-| `␣` `␣` `c` |                                   | `<Action>(CodeCompletion)`                                      |
-| `␣` `c` `c` |                                   | `<Action>(CodeCompletion)`                                      |
-| `␣` `c` `C` |                                   | `<Action>(SmartTypeCompletion)`                                 |
-| `␣` `c` `f` |                                   | `<Action>(ReformatCode)`                                        |
-| `␣` `c` `i` |                                   | `<Action>(OptimizeImports)`                                     |
-| `␣` `c` `s` |                                   | `<Action>(SurroundWith)`                                        |
-| `␣` `c` `t` |                                   | `<Action>(InsertLiveTemplate)`                                  |
-| `␣` `c` `u` |                                   | `<Action>(Unwrap)`                                              |
-|             |                                   |                                                                 |
-| `␣` `␣` `x` | `workspace::CloseWindow`          | `<Action>(CloseProject)`                                        |
-| `␣` `x` `n` |                                   | `<Action>(CloseAllNotifications)`                               |
-| `␣` `x` `x` | `pane::CloseActiveItem`           | `<Action>(CloseContent)`                                        |
-|             |                                   |                                                                 |
-| `␣` `␣` `n` |                                   | `<Action>(NewElementSamePlace)`                                 |
-| `␣` `n` `d` |                                   | `<Action>(NewDir)`                                              |
-| `␣` `n` `f` |                                   | `<Action>(NewFile)`                                             |
-| `␣` `n` `g` |                                   | `<Action>(Generate)`                                            |
-| `␣` `n` `o` |                                   | `<Action>(OverrideMethods)`                                     |
-| `␣` `n` `s` |                                   | `<Action>(NewScratchFile)`                                      |
-|             |                                   |                                                                 |
-| `␣` `z` `k` | `zed::OpenKeymap`                 |                                                                 |
-| `␣` `z` `K` | `zed::OpenDefaultKeymap`          |                                                                 |
-| `␣` `z` `s` | `zed::OpenSettings`               |                                                                 |
-| `␣` `z` `S` | `zed::OpenDefaultSettings`        |                                                                 |
+| Key | Zed | IdeaVim |
+| --- | --- | --- |
+| `␣␣y` |  | `CopyReferencePopupGroup` |
+| | | |
+| `␣␣e` | `task::Spawn` | `ChooseRunConfiguration` |
+| `␣ee` |  | `editRunConfigurations` |
+| `␣ed` |  | `Debug` |
+| `␣eD` |  | `DebugClass` |
+| `␣er` |  | `Run` |
+| `␣eR` |  | `RunClass` |
+| `␣ex` |  | `Stop` |
+| | | |
+| `␣␣E` |  | `ChooseDebugConfiguration` |
+| | | |
+| `␣␣f` |  | `SearchEverywhere` |
+| `␣fe` |  | `<Plug>(easymotion-s)` |
+| `␣fc` |  | `GotoClass` |
+| `␣ff` | `file_finder::Toggle` | `GotoFile` |
+| `␣fs` |  | `GotoSymbol` |
+| `␣fa` | `command_palette::Toggle` | `GotoAction` |
+| `␣ft` | `pane::DeploySearch` | `FindInPath` |
+| `␣fS` |  | `Scratch.ShowFilesPopup` |
+| `␣fj` |  | `RecentFiles` |
+| `␣fk` |  | `RecentChangedFiles` |
+| `␣fl` |  | `RecentLocations` |
+| `␣fp` | `projects::OpenRecent` | `ManageRecentProjects` |
+| | | |
+| `␣␣r` |  | `Replace` |
+| `␣rf` |  | `ReplaceInPath` |
+| | | |
+| `␣␣d` |  | `QuickJavaDoc` |
+| `␣di` |  | `QuickImplementations` |
+| `␣de` |  | `ShowErrorDescription` |
+| `␣dd` |  | `QuickJavaDoc` |
+| `␣dp` |  | `ParameterInfo` |
+| `␣dh` | `editor::Hover` | `ShowHoverInfo` |
+| | | |
+| `␣␣s` |  | `Vcs.QuickListPopupAction` |
+| `␣sa` |  | `Vcs.ToggleAmendCommitMode` |
+| `␣sb` | `branches::OpenRecent` | `Git.Branches` |
+| `␣sB` | `editor::ToggleGitBlame` | `Annotate` |
+| `␣sc` |  | `CheckinProject` |
+| `␣sd` |  | `Compare.SameVersion` |
+| `␣sf` |  | `Git.Fetch` |
+| `␣sF` |  | `Vcs.Log.ShowAllAffected` |
+| `␣sh` |  | `Vcs.ShowTabbedFileHistory` |
+| `␣sH` |  | `LocalHistory.ShowHistory` |
+| `␣sl` |  | `Vcs.RollbackChangedLines` |
+| `␣sm` |  | `Vcs.ShowMessageHistory` |
+| `␣sn` |  | `Git.CreateNewBranch` |
+| `␣sN` |  | `Github.Create.Pull.Request` |
+| `␣sp` |  | `Vcs.Push` |
+| `␣sr` |  | `ChangesView.Revert` |
+| `␣ss` |  | `Git.Stash` |
+| `␣sS` |  | `Git.Unstash` |
+| `␣st` |  | `Git.Tag` |
+| `␣su` |  | `Vcs.UpdateProject` |
+| | | |
+| `␣␣a` |  | `osmedile.intellij.stringmanip.SwitchCasePopup` |
+| `␣ac` |  | `StringManipulation.ToCamelCase` |
+| `␣as` |  | `StringManipulation.ToSnakeCase` |
+| `␣ak` |  | `StringManipulation.ToKebabCase` |
+| `␣ap` |  | `StringManipulation.ToPascalCase` |
+| `␣al` |  | `osmedile.intellij.stringmanip.ToLowerCaseAction` |
+| `␣au` |  | `osmedile.intellij.stringmanip.ToUpperCaseAction` |
+| `␣ar` |  | `osmedile.intellij.stringmanip.SwapCaseAction` |
+| `␣aC` |  | `osmedile.intellij.stringmanip.WordsCapitalizeAction` |
+| `␣aS` |  | `StringManipulation.ToScreamingSnakeCase` |
+| | | |
+| `␣␣j` |  | `EditorPopupMenu.GoTo` |
+| `␣jd` | `editor::GoToDefinition` | `GotoDeclaration` |
+| `␣jt` | `editor::GoToTypeDefinition` | `GotoTypeDeclaration` |
+| `␣jT` | `editor::GoToTypeDefinitionSplit` | `GotoTest` |
+| `␣ji` | `editor::GoToImplementation` | `GotoImplementation` |
+| `␣jo` |  | `RevealGroup` |
+| `␣jr` |  | `GotoRelated` |
+| `␣js` |  | `GotoSuperMethod` |
+| `␣ju` | `editor::FindAllReferences` | `ShowUsages` |
+| `␣jU` |  | `FindUsages` |
+| `␣jm` | `outline::Toggle` | `FileStructurePopup` |
+| `␣jn` |  | `ShowNavBar` |
+| `␣jD` | `editor::GoToDefinitionSplit` |  |
+| `␣jI` | `editor::GoToImplementationSplit` |  |
+| | | |
+| `␣␣k` |  | `Refactorings.QuickListPopupAction` |
+| `␣kc` |  | `IntroduceConstant` |
+| `␣kd` |  | `SafeDelete` |
+| `␣kf` |  | `IntroduceField` |
+| `␣ki` |  | `ExtractInterface` |
+| `␣kl` |  | `Inline` |
+| `␣km` |  | `ExtractMethod` |
+| `␣ko` |  | `Move` |
+| `␣kp` |  | `IntroduceParameter` |
+| `␣kr` | `editor::Rename` | `RenameElement` |
+| `␣kR` |  | `RenameFile` |
+| `␣ks` |  | `ChangeSignature` |
+| `␣ku` |  | `MembersPullUp` |
+| `␣kv` |  | `IntroduceVariable` |
+| | | |
+| `␣␣l` | `workspace::CloseAllDocks` | `HideAllWindows` |
+| `␣la` |  | `ActivateAIAssistantToolWindow` |
+| `␣lA` |  | `ActivateHTTPClientAuthenticationLogToolWindow` |
+| `␣lb` |  | `ActivateBuildToolWindow` |
+| `␣lB` |  | `ActivateBookmarksToolWindow` |
+| `␣ld` |  | `ActivateDebugToolWindow` |
+| `␣lD` |  | `ActivateDatabaseToolWindow` |
+| `␣le` | `diagnostics::Deploy` | `ActivateProblemsViewToolWindow` |
+| `␣lE` |  | `ActivateEndpointsToolWindow` |
+| `␣lf` |  | `ActivateFindToolWindow` |
+| `␣lp` | `project_panel::ToggleFocus` | `ActivateProjectToolWindow` |
+| `␣lr` |  | `ActivateRunToolWindow` |
+| `␣lt` | `terminal_panel::ToggleFocus` | `ActivateTerminalToolWindow` |
+| `␣lv` |  | `ActivateVersionControlToolWindow` |
+| `␣lV` |  | `ActivatePullRequestsToolWindow` |
+| `␣lc` | `collab_panel::ToggleFocus` |  |
+| | | |
+| `␣␣v` |  | `ViewMenu` |
+| `␣vg` |  | `ShowGutterIconsSettings` |
+| `␣vi` | `editor::ToggleInlayHints` | `EditorGutterToggleGlobalIndentLines` |
+| `␣vl` | `workspace::ToggleLeftDock` | `EditorGutterToggleGlobalStickyLines` |
+| `␣vn` | `editor::ToggleLineNumbers` | `EditorGutterToggleGlobalLineNumbers` |
+| `␣vw` | `editor::ToggleSoftWrap` | `EditorToggleUseSoftWraps` |
+| `␣vs` |  | `ViewStatusBar` |
+| `␣vt` | `theme_selector::Toggle` | `ViewToolButtons` |
+| `␣vz` |  | `ChangeIdeScale` |
+| `␣vr` | `workspace::ToggleRightDock` |  |
+| `␣vb` | `workspace::ToggleBottomDock` |  |
+| `␣vh` | `zed::Hide` |  |
+| | | |
+| `␣␣c` | `editor::ShowCompletions` | `CodeCompletion` |
+| `␣cc` | `editor::ShowCompletions` | `CodeCompletion` |
+| `␣cC` |  | `SmartTypeCompletion` |
+| `␣cf` |  | `ReformatCode` |
+| `␣ci` |  | `OptimizeImports` |
+| `␣cs` |  | `SurroundWith` |
+| `␣ct` |  | `InsertLiveTemplate` |
+| `␣cu` |  | `Unwrap` |
+| | | |
+| `␣␣x` | `workspace::CloseWindow` | `CloseProject` |
+| `␣xn` |  | `CloseAllNotifications` |
+| `␣xx` | `pane::CloseActiveItem` | `CloseContent` |
+| | | |
+| `␣␣n` |  | `NewElementSamePlace` |
+| `␣nd` |  | `NewDir` |
+| `␣nf` |  | `NewFile` |
+| `␣ng` |  | `Generate` |
+| `␣no` |  | `OverrideMethods` |
+| `␣ns` |  | `NewScratchFile` |
+| | | |
+| `␣zk` | `zed::OpenKeymap` |  |
+| `␣zK` | `zed::OpenDefaultKeymap` |  |
+| `␣zs` | `zed::OpenSettings` |  |
+| `␣zS` | `zed::OpenDefaultSettings` |  |

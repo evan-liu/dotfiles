@@ -16,8 +16,8 @@
       "alt-j": "editor::SelectSmallerSyntaxNode",
       "alt-k": "editor::SelectLargerSyntaxNode",
 
-      "shift-cmd-j": "editor::MoveLineDown",
-      "shift-cmd-k": "editor::MoveLineUp",
+      "cmd-shift-j": "editor::MoveLineDown",
+      "cmd-shift-k": "editor::MoveLineUp",
 
       "alt-ctrl-j": "editor::GoToDiagnostic",
       "alt-ctrl-k": "editor::GoToPrevDiagnostic",
@@ -73,6 +73,9 @@
       "space l e": "diagnostics::Deploy",
 
       "space space e": "task::Spawn",
+
+      "space space c": "editor::ShowCompletions",
+      "space c c": "editor::ShowCompletions",
 
       "space x x": "pane::CloseActiveItem",
       "space space x": "workspace::CloseWindow",
