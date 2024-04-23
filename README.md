@@ -13,14 +13,10 @@ My [`.ideavimrc` file](https://github.com/evan-liu/dotfiles/blob/main/ideavimrc.
 - [`zed-keymap.json`](https://github.com/evan-liu/dotfiles/blob/main/zed-keymap.json) - My `keymap` file for [Zed](https://zed.dev/).
 - [`zed-settings.json`](https://github.com/evan-liu/dotfiles/blob/main/zed-settings.json) - My `settings` file for [Zed](https://zed.dev/).
 
-## J K H L (normal mode)
+## H J K L with modifiers
 
 | Key       | Zed                                | IdeaVim               |
 | --------- | ---------------------------------- | --------------------- |
-| `j`       | vim::Down                          | (vim)                 |
-| `k`       | vim::Up                            | (vim)                 |
-| `h`       | vim::Left                          | (vim)                 |
-| `l`       | vim::Right                         | (vim)                 |
 | `j` `⇧`   | vim::LineDown                      | EditorScrollDown      |
 | `k` `⇧`   | vim::LineUp                        | EditorScrollUp        |
 | `h` `⇧`   | vim::WindowTop                     | (vim)                 |
