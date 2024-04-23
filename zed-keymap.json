@@ -66,6 +66,7 @@
       "space l p": "project_panel::ToggleFocus",
       "space l t": "terminal_panel::ToggleFocus",
       "space l c": "collab_panel::ToggleFocus",
+      "space l e": "diagnostics::Deploy",
 
       "space space e": "task::Spawn",
 
