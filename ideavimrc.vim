@@ -80,6 +80,11 @@ let g:WhichKey_SortOrder = "by_key_prefix_first"
 " Others Mappings
 " ==============================================================================
 
+nmap J <Action>(EditorScrollDown)
+nmap K <Action>(EditorScrollUp)
+
+map <C-y> <Action>(EditorJoinLines)
+
 " Redo
 map U <C-r>
 

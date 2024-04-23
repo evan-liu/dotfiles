@@ -2,6 +2,8 @@
   {
     "context": "Editor",
     "bindings": {
+      "ctrl-y": "vim::JoinLines",
+
       "ctrl-j": "vim::ScrollDown",
       "ctrl-k": "vim::ScrollUp",
 
@@ -32,8 +34,10 @@
   {
     "context": "Editor && VimControl && !VimWaiting && !menu",
     "bindings": {
+      "shift-j": "vim::LineDown",
+      "shift-k": "vim::LineUp",
+
       "shift-u": "editor::Redo",
-      "shift-j": "editor::JoinLines",
 
       "g s": "pane::RevealInProjectPanel",
 
@@ -87,18 +91,6 @@
       "space z K": "zed::OpenDefaultKeymap",
       "space z s": "zed::OpenSettings",
       "space z S": "zed::OpenDefaultSettings"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == normal",
-    "bindings": {
-      "g c c": "editor::ToggleComments"
-    }
-  },
-  {
-    "context": "Editor && vim_mode == visual",
-    "bindings": {
-      "g c": "editor::ToggleComments"
     }
   },
   {
