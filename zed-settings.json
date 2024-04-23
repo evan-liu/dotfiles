@@ -15,6 +15,7 @@
   "theme": "One Dark",
   "ui_font_size": 18,
   "buffer_font_size": 18,
+  "vertical_scroll_margin": 5,
 
   "toolbar": {
     "quick_actions": false
