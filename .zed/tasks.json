@@ -1,0 +1,6 @@
+[
+  {
+    "label": "Leader Keys",
+    "command": "node scripts/leader-key.mjs"
+  }
+]
