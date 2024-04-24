@@ -28,6 +28,9 @@
     "code_actions": false,
     "folds": false
   },
+  "git": {
+    "inline_blame": { "enabled": false }
+  },
 
   "collaboration_panel": {
     "dock": "right"
