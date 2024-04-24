@@ -56,12 +56,37 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 
 | Key | Zed | IdeaVim |
 | --- | --- | --- |
-| `␣␣y` |  | `CopyReferencePopupGroup` |
+| `␣␣a` |  | `osmedile.intellij.stringmanip.SwitchCasePopup` |
+| `␣ac` |  | `StringManipulation.ToCamelCase` |
+| `␣aC` |  | `osmedile.intellij.stringmanip.WordsCapitalizeAction` |
+| `␣ak` |  | `StringManipulation.ToKebabCase` |
+| `␣al` |  | `osmedile.intellij.stringmanip.ToLowerCaseAction` |
+| `␣ap` |  | `StringManipulation.ToPascalCase` |
+| `␣ar` |  | `osmedile.intellij.stringmanip.SwapCaseAction` |
+| `␣as` |  | `StringManipulation.ToSnakeCase` |
+| `␣aS` |  | `StringManipulation.ToScreamingSnakeCase` |
+| `␣au` |  | `osmedile.intellij.stringmanip.ToUpperCaseAction` |
+| | | |
+| `␣␣c` | `editor::ShowCompletions` | `CodeCompletion` |
+| `␣cc` | `editor::ShowCompletions` | `CodeCompletion` |
+| `␣cC` |  | `SmartTypeCompletion` |
+| `␣cf` |  | `ReformatCode` |
+| `␣ci` |  | `OptimizeImports` |
+| `␣cs` |  | `SurroundWith` |
+| `␣ct` |  | `InsertLiveTemplate` |
+| `␣cu` |  | `Unwrap` |
+| | | |
+| `␣␣d` |  | `QuickJavaDoc` |
+| `␣dd` |  | `QuickJavaDoc` |
+| `␣de` |  | `ShowErrorDescription` |
+| `␣dh` | `editor::Hover` | `ShowHoverInfo` |
+| `␣di` |  | `QuickImplementations` |
+| `␣dp` |  | `ParameterInfo` |
 | | | |
 | `␣␣e` | `task::Spawn` | `ChooseRunConfiguration` |
-| `␣ee` |  | `editRunConfigurations` |
 | `␣ed` |  | `Debug` |
 | `␣eD` |  | `DebugClass` |
+| `␣ee` |  | `editRunConfigurations` |
 | `␣er` |  | `Run` |
 | `␣eR` |  | `RunClass` |
 | `␣ex` |  | `Stop` |
@@ -69,27 +94,74 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣␣E` |  | `ChooseDebugConfiguration` |
 | | | |
 | `␣␣f` |  | `SearchEverywhere` |
-| `␣fe` |  | `<Plug>(easymotion-s)` |
-| `␣fc` |  | `GotoClass` |
-| `␣ff` | `file_finder::Toggle` | `GotoFile` |
-| `␣fs` |  | `GotoSymbol` |
 | `␣fa` | `command_palette::Toggle` | `GotoAction` |
-| `␣ft` | `pane::DeploySearch` | `FindInPath` |
-| `␣fS` |  | `Scratch.ShowFilesPopup` |
+| `␣fc` |  | `GotoClass` |
+| `␣fe` |  | `<Plug>(easymotion-s)` |
+| `␣ff` | `file_finder::Toggle` | `GotoFile` |
 | `␣fj` |  | `RecentFiles` |
 | `␣fk` |  | `RecentChangedFiles` |
 | `␣fl` |  | `RecentLocations` |
 | `␣fp` | `projects::OpenRecent` | `ManageRecentProjects` |
+| `␣fs` |  | `GotoSymbol` |
+| `␣fS` |  | `Scratch.ShowFilesPopup` |
+| `␣ft` | `pane::DeploySearch` | `FindInPath` |
+| | | |
+| `␣␣j` |  | `EditorPopupMenu.GoTo` |
+| `␣jd` | `editor::GoToDefinition` | `GotoDeclaration` |
+| `␣jD` | `editor::GoToDefinitionSplit` |  |
+| `␣ji` | `editor::GoToImplementation` | `GotoImplementation` |
+| `␣jI` | `editor::GoToImplementationSplit` |  |
+| `␣jm` | `outline::Toggle` | `FileStructurePopup` |
+| `␣jn` |  | `ShowNavBar` |
+| `␣jo` |  | `RevealGroup` |
+| `␣jr` |  | `GotoRelated` |
+| `␣js` |  | `GotoSuperMethod` |
+| `␣jt` | `editor::GoToTypeDefinition` | `GotoTypeDeclaration` |
+| `␣jT` | `editor::GoToTypeDefinitionSplit` | `GotoTest` |
+| `␣ju` | `editor::FindAllReferences` | `ShowUsages` |
+| `␣jU` |  | `FindUsages` |
+| | | |
+| `␣␣k` |  | `Refactorings.QuickListPopupAction` |
+| `␣kc` |  | `IntroduceConstant` |
+| `␣kd` |  | `SafeDelete` |
+| `␣kf` |  | `IntroduceField` |
+| `␣ki` |  | `ExtractInterface` |
+| `␣kl` |  | `Inline` |
+| `␣km` |  | `ExtractMethod` |
+| `␣ko` |  | `Move` |
+| `␣kp` |  | `IntroduceParameter` |
+| `␣kr` | `editor::Rename` | `RenameElement` |
+| `␣kR` |  | `RenameFile` |
+| `␣ks` |  | `ChangeSignature` |
+| `␣ku` |  | `MembersPullUp` |
+| `␣kv` |  | `IntroduceVariable` |
+| | | |
+| `␣␣l` | `workspace::CloseAllDocks` | `HideAllWindows` |
+| `␣la` |  | `ActivateAIAssistantToolWindow` |
+| `␣lA` |  | `ActivateHTTPClientAuthenticationLogToolWindow` |
+| `␣lb` |  | `ActivateBuildToolWindow` |
+| `␣lB` |  | `ActivateBookmarksToolWindow` |
+| `␣lc` | `collab_panel::ToggleFocus` |  |
+| `␣ld` |  | `ActivateDebugToolWindow` |
+| `␣lD` |  | `ActivateDatabaseToolWindow` |
+| `␣le` | `diagnostics::Deploy` | `ActivateProblemsViewToolWindow` |
+| `␣lE` |  | `ActivateEndpointsToolWindow` |
+| `␣lf` |  | `ActivateFindToolWindow` |
+| `␣lp` | `project_panel::ToggleFocus` | `ActivateProjectToolWindow` |
+| `␣lr` |  | `ActivateRunToolWindow` |
+| `␣lt` | `terminal_panel::ToggleFocus` | `ActivateTerminalToolWindow` |
+| `␣lv` |  | `ActivateVersionControlToolWindow` |
+| `␣lV` |  | `ActivatePullRequestsToolWindow` |
+| | | |
+| `␣␣n` |  | `NewElementSamePlace` |
+| `␣nd` |  | `NewDir` |
+| `␣nf` |  | `NewFile` |
+| `␣ng` |  | `Generate` |
+| `␣no` |  | `OverrideMethods` |
+| `␣ns` |  | `NewScratchFile` |
 | | | |
 | `␣␣r` |  | `Replace` |
 | `␣rf` |  | `ReplaceInPath` |
-| | | |
-| `␣␣d` |  | `QuickJavaDoc` |
-| `␣di` |  | `QuickImplementations` |
-| `␣de` |  | `ShowErrorDescription` |
-| `␣dd` |  | `QuickJavaDoc` |
-| `␣dp` |  | `ParameterInfo` |
-| `␣dh` | `editor::Hover` | `ShowHoverInfo` |
 | | | |
 | `␣␣s` |  | `Vcs.QuickListPopupAction` |
 | `␣sa` |  | `Vcs.ToggleAmendCommitMode` |
@@ -112,96 +184,24 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣st` |  | `Git.Tag` |
 | `␣su` |  | `Vcs.UpdateProject` |
 | | | |
-| `␣␣a` |  | `osmedile.intellij.stringmanip.SwitchCasePopup` |
-| `␣ac` |  | `StringManipulation.ToCamelCase` |
-| `␣as` |  | `StringManipulation.ToSnakeCase` |
-| `␣ak` |  | `StringManipulation.ToKebabCase` |
-| `␣ap` |  | `StringManipulation.ToPascalCase` |
-| `␣al` |  | `osmedile.intellij.stringmanip.ToLowerCaseAction` |
-| `␣au` |  | `osmedile.intellij.stringmanip.ToUpperCaseAction` |
-| `␣ar` |  | `osmedile.intellij.stringmanip.SwapCaseAction` |
-| `␣aC` |  | `osmedile.intellij.stringmanip.WordsCapitalizeAction` |
-| `␣aS` |  | `StringManipulation.ToScreamingSnakeCase` |
-| | | |
-| `␣␣j` |  | `EditorPopupMenu.GoTo` |
-| `␣jd` | `editor::GoToDefinition` | `GotoDeclaration` |
-| `␣jt` | `editor::GoToTypeDefinition` | `GotoTypeDeclaration` |
-| `␣jT` | `editor::GoToTypeDefinitionSplit` | `GotoTest` |
-| `␣ji` | `editor::GoToImplementation` | `GotoImplementation` |
-| `␣jo` |  | `RevealGroup` |
-| `␣jr` |  | `GotoRelated` |
-| `␣js` |  | `GotoSuperMethod` |
-| `␣ju` | `editor::FindAllReferences` | `ShowUsages` |
-| `␣jU` |  | `FindUsages` |
-| `␣jm` | `outline::Toggle` | `FileStructurePopup` |
-| `␣jn` |  | `ShowNavBar` |
-| `␣jD` | `editor::GoToDefinitionSplit` |  |
-| `␣jI` | `editor::GoToImplementationSplit` |  |
-| | | |
-| `␣␣k` |  | `Refactorings.QuickListPopupAction` |
-| `␣kc` |  | `IntroduceConstant` |
-| `␣kd` |  | `SafeDelete` |
-| `␣kf` |  | `IntroduceField` |
-| `␣ki` |  | `ExtractInterface` |
-| `␣kl` |  | `Inline` |
-| `␣km` |  | `ExtractMethod` |
-| `␣ko` |  | `Move` |
-| `␣kp` |  | `IntroduceParameter` |
-| `␣kr` | `editor::Rename` | `RenameElement` |
-| `␣kR` |  | `RenameFile` |
-| `␣ks` |  | `ChangeSignature` |
-| `␣ku` |  | `MembersPullUp` |
-| `␣kv` |  | `IntroduceVariable` |
-| | | |
-| `␣␣l` | `workspace::CloseAllDocks` | `HideAllWindows` |
-| `␣la` |  | `ActivateAIAssistantToolWindow` |
-| `␣lA` |  | `ActivateHTTPClientAuthenticationLogToolWindow` |
-| `␣lb` |  | `ActivateBuildToolWindow` |
-| `␣lB` |  | `ActivateBookmarksToolWindow` |
-| `␣ld` |  | `ActivateDebugToolWindow` |
-| `␣lD` |  | `ActivateDatabaseToolWindow` |
-| `␣le` | `diagnostics::Deploy` | `ActivateProblemsViewToolWindow` |
-| `␣lE` |  | `ActivateEndpointsToolWindow` |
-| `␣lf` |  | `ActivateFindToolWindow` |
-| `␣lp` | `project_panel::ToggleFocus` | `ActivateProjectToolWindow` |
-| `␣lr` |  | `ActivateRunToolWindow` |
-| `␣lt` | `terminal_panel::ToggleFocus` | `ActivateTerminalToolWindow` |
-| `␣lv` |  | `ActivateVersionControlToolWindow` |
-| `␣lV` |  | `ActivatePullRequestsToolWindow` |
-| `␣lc` | `collab_panel::ToggleFocus` |  |
-| | | |
 | `␣␣v` |  | `ViewMenu` |
+| `␣vb` | `workspace::ToggleBottomDock` |  |
 | `␣vg` |  | `ShowGutterIconsSettings` |
+| `␣vh` | `zed::Hide` |  |
 | `␣vi` | `editor::ToggleInlayHints` | `EditorGutterToggleGlobalIndentLines` |
 | `␣vl` | `workspace::ToggleLeftDock` | `EditorGutterToggleGlobalStickyLines` |
 | `␣vn` | `editor::ToggleLineNumbers` | `EditorGutterToggleGlobalLineNumbers` |
-| `␣vw` | `editor::ToggleSoftWrap` | `EditorToggleUseSoftWraps` |
+| `␣vr` | `workspace::ToggleRightDock` |  |
 | `␣vs` |  | `ViewStatusBar` |
 | `␣vt` | `theme_selector::Toggle` | `ViewToolButtons` |
+| `␣vw` | `editor::ToggleSoftWrap` | `EditorToggleUseSoftWraps` |
 | `␣vz` |  | `ChangeIdeScale` |
-| `␣vr` | `workspace::ToggleRightDock` |  |
-| `␣vb` | `workspace::ToggleBottomDock` |  |
-| `␣vh` | `zed::Hide` |  |
-| | | |
-| `␣␣c` | `editor::ShowCompletions` | `CodeCompletion` |
-| `␣cc` | `editor::ShowCompletions` | `CodeCompletion` |
-| `␣cC` |  | `SmartTypeCompletion` |
-| `␣cf` |  | `ReformatCode` |
-| `␣ci` |  | `OptimizeImports` |
-| `␣cs` |  | `SurroundWith` |
-| `␣ct` |  | `InsertLiveTemplate` |
-| `␣cu` |  | `Unwrap` |
 | | | |
 | `␣␣x` | `workspace::CloseWindow` | `CloseProject` |
 | `␣xn` |  | `CloseAllNotifications` |
 | `␣xx` | `pane::CloseActiveItem` | `CloseContent` |
 | | | |
-| `␣␣n` |  | `NewElementSamePlace` |
-| `␣nd` |  | `NewDir` |
-| `␣nf` |  | `NewFile` |
-| `␣ng` |  | `Generate` |
-| `␣no` |  | `OverrideMethods` |
-| `␣ns` |  | `NewScratchFile` |
+| `␣␣y` |  | `CopyReferencePopupGroup` |
 | | | |
 | `␣zk` | `zed::OpenKeymap` |  |
 | `␣zK` | `zed::OpenDefaultKeymap` |  |

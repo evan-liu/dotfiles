@@ -70,18 +70,28 @@ async function write(mapping) {
     ].join('')
   }
 
-  Object.entries(mapping).forEach(([category, all], i) => {
-    if (i !== 0) {
-      result += '| | | |\n'
-    }
-    const { leader, ...rest } = all
-    if (leader) {
-      addLine(['␣', '␣', category], leader)
-    }
-    Object.entries(rest).forEach(([key, action]) => {
-      addLine(['␣', category, key], action)
+  Object.entries(mapping)
+    .sort((a, b) => sortKey(a[0], b[0]))
+    .forEach(([category, all], i) => {
+      if (i !== 0) {
+        result += '| | | |\n'
+      }
+      const { leader, ...rest } = all
+      if (leader) {
+        addLine(['␣', '␣', category], leader)
+      }
+      Object.entries(rest)
+        .sort((a, b) => sortKey(a[0], b[0]))
+        .forEach(([key, action]) => {
+          addLine(['␣', category, key], action)
+        })
     })
-  })
 
   await writeFile(file, result)
+}
+
+function sortKey(a, b) {
+  const compareCode =
+    a.toLowerCase().charCodeAt() - b.toLowerCase().charCodeAt()
+  return compareCode === 0 ? (a < b ? 1 : -1) : compareCode
 }
