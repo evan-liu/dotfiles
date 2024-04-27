@@ -214,6 +214,7 @@ map <leader>au <Action>(osmedile.intellij.stringmanip.ToUpperCaseAction)
 map <leader>ar <Action>(osmedile.intellij.stringmanip.SwapCaseAction)
 map <leader>aC <Action>(osmedile.intellij.stringmanip.WordsCapitalizeAction)
 map <leader>aS <Action>(StringManipulation.ToScreamingSnakeCase)
+map <leader>at <Action>(osmedile.intellij.stringmanip.ToCamelCaseAction)
 
 " ----------------------------- j ------
 let g:WhichKeyDesc_j = "<leader>j Jump/Goto (Code)"

@@ -57,15 +57,16 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | Key | Zed | IdeaVim |
 | --- | --- | --- |
 | `␣␣a` |  | `osmedile.intellij.stringmanip.SwitchCasePopup` |
-| `␣ac` |  | `StringManipulation.ToCamelCase` |
+| `␣ac` | `editor::ConvertToLowerCamelCase` | `StringManipulation.ToCamelCase` |
 | `␣aC` |  | `osmedile.intellij.stringmanip.WordsCapitalizeAction` |
-| `␣ak` |  | `StringManipulation.ToKebabCase` |
-| `␣al` |  | `osmedile.intellij.stringmanip.ToLowerCaseAction` |
-| `␣ap` |  | `StringManipulation.ToPascalCase` |
+| `␣ak` | `editor::ConvertToKebabCase` | `StringManipulation.ToKebabCase` |
+| `␣al` | `editor::ConvertToLowerCase` | `osmedile.intellij.stringmanip.ToLowerCaseAction` |
+| `␣ap` | `editor::ConvertToUpperCamelCase` | `StringManipulation.ToPascalCase` |
 | `␣ar` |  | `osmedile.intellij.stringmanip.SwapCaseAction` |
-| `␣as` |  | `StringManipulation.ToSnakeCase` |
+| `␣as` | `editor::ConvertToSnakeCase` | `StringManipulation.ToSnakeCase` |
 | `␣aS` |  | `StringManipulation.ToScreamingSnakeCase` |
-| `␣au` |  | `osmedile.intellij.stringmanip.ToUpperCaseAction` |
+| `␣at` | `editor::ConvertToTitleCase` | `osmedile.intellij.stringmanip.ToCamelCaseAction` |
+| `␣au` | `editor::ConvertToUpperCase` | `osmedile.intellij.stringmanip.ToUpperCaseAction` |
 | | | |
 | `␣␣c` | `editor::ShowCompletions` | `CodeCompletion` |
 | `␣cc` | `editor::ShowCompletions` | `CodeCompletion` |

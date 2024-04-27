@@ -44,6 +44,14 @@
       "space w": "workspace::SaveAll",
       "space enter": "editor::ToggleCodeActions",
 
+      "space a l": "editor::ConvertToLowerCase",
+      "space a u": "editor::ConvertToUpperCase",
+      "space a c": "editor::ConvertToLowerCamelCase",
+      "space a p": "editor::ConvertToUpperCamelCase",
+      "space a k": "editor::ConvertToKebabCase",
+      "space a s": "editor::ConvertToSnakeCase",
+      "space a t": "editor::ConvertToTitleCase",
+
       "space f f": "file_finder::Toggle",
       "space f a": "command_palette::Toggle",
       "space f p": "projects::OpenRecent",
