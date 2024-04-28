@@ -16,7 +16,6 @@
   "ui_font_size": 18,
   "buffer_font_size": 18,
   "vertical_scroll_margin": 5,
-  "scroll_beyond_last_line": "one_page",
 
   "toolbar": {
     "quick_actions": false
