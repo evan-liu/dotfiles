@@ -141,18 +141,16 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣la` |  | `ActivateAIAssistantToolWindow` |
 | `␣lA` |  | `ActivateHTTPClientAuthenticationLogToolWindow` |
 | `␣lb` |  | `ActivateBuildToolWindow` |
-| `␣lB` |  | `ActivateBookmarksToolWindow` |
 | `␣lc` | `collab_panel::ToggleFocus` |  |
 | `␣ld` |  | `ActivateDebugToolWindow` |
-| `␣lD` |  | `ActivateDatabaseToolWindow` |
 | `␣le` | `diagnostics::Deploy` | `ActivateProblemsViewToolWindow` |
-| `␣lE` |  | `ActivateEndpointsToolWindow` |
 | `␣lf` |  | `ActivateFindToolWindow` |
 | `␣lp` | `project_panel::ToggleFocus` | `ActivateProjectToolWindow` |
 | `␣lr` |  | `ActivateRunToolWindow` |
+| `␣ls` |  | `ActivateServicesToolWindow` |
 | `␣lt` | `terminal_panel::ToggleFocus` | `ActivateTerminalToolWindow` |
+| `␣lu` |  | `ActivatePullRequestsToolWindow` |
 | `␣lv` |  | `ActivateVersionControlToolWindow` |
-| `␣lV` |  | `ActivatePullRequestsToolWindow` |
 | | | |
 | `␣␣n` |  | `NewElementSamePlace` |
 | `␣nd` |  | `NewDir` |
@@ -192,6 +190,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣vi` | `editor::ToggleInlayHints` | `EditorGutterToggleGlobalIndentLines` |
 | `␣vl` | `workspace::ToggleLeftDock` | `EditorGutterToggleGlobalStickyLines` |
 | `␣vn` | `editor::ToggleLineNumbers` | `EditorGutterToggleGlobalLineNumbers` |
+| `␣vN` |  | `NavbarLocationGroup` |
 | `␣vr` | `workspace::ToggleRightDock` |  |
 | `␣vs` |  | `ViewStatusBar` |
 | `␣vt` | `theme_selector::Toggle` | `ViewToolButtons` |
