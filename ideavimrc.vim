@@ -146,7 +146,6 @@ map <leader>ex <Action>(Stop)
 let g:WhichKeyDesc_f = "<leader>f Find/Search"
 " --------------------------------------
 map <leader><leader>f <Action>(SearchEverywhere)
-map <leader>fe <Plug>(easymotion-s)
 
 map <leader>fc <Action>(GotoClass)
 map <leader>ff <Action>(GotoFile)
