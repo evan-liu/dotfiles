@@ -150,6 +150,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣lt` | `terminal_panel::ToggleFocus` | `ActivateTerminalToolWindow` |
 | `␣lu` |  | `ActivatePullRequestsToolWindow` |
 | `␣lv` |  | `ActivateVersionControlToolWindow` |
+| `␣lV` |  | `Github.Pull.Request.Show.In.Toolwindow` |
 | | | |
 | `␣␣n` |  | `NewElementSamePlace` |
 | `␣nd` |  | `NewDir` |

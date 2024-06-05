@@ -267,6 +267,7 @@ map <leader>lr <Action>(ActivateRunToolWindow)
 map <leader>ls <Action>(ActivateServicesToolWindow)
 map <leader>lt <Action>(ActivateTerminalToolWindow)
 map <leader>lv <Action>(ActivateVersionControlToolWindow)
+map <leader>lV <Action>(Github.Pull.Request.Show.In.Toolwindow)
 map <leader>lu <Action>(ActivatePullRequestsToolWindow)
 if &ide =~? 'rider'
   map <leader>ln <Action>(ActivateNuGetToolWindow)
