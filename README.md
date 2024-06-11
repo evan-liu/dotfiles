@@ -201,6 +201,12 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣xx` | `pane::CloseActiveItem` | `CloseContent` |
 | | | |
 | `␣␣y` |  | `CopyReferencePopupGroup` |
+| `␣ya` |  | `CopyAbsolutePath` |
+| `␣yf` |  | `CopyFileName` |
+| `␣yl` |  | `CopyPathWithLineNumber` |
+| `␣yp` |  | `CopyContentRootPath` |
+| `␣yP` |  | `CopyPathFromRepositoryRootProvider` |
+| `␣yr` |  | `CopyReference` |
 | | | |
 | `␣zk` | `zed::OpenKeymap` |  |
 | `␣zK` | `zed::OpenDefaultKeymap` |  |

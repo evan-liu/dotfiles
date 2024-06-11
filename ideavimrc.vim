@@ -121,14 +121,19 @@ map <D-A-C-x> <Plug>RemoveOccurrence
 map <D-A-C-a> <Plug>AllWholeOccurrences
 map <D-A-C-b> <Plug>AllOccurrences
 
+" ----------------------------- y ------
+let g:WhichKeyDesc_y = "<leader>y yank/copy"
 " --------------------------------------
-" y, d, p - Copy/Cut/Paste
-" --------------------------------------
+noremap y "+y
+noremap yy "+yy
+
 map <leader><leader>y <Action>(CopyReferencePopupGroup)
-map <leader>y "+y
-map <leader>Y "+Y
-map <leader>p "+p
-map <leader>P "+P
+map <leader>ya <Action>(CopyAbsolutePath)
+map <leader>yf <Action>(CopyFileName)
+map <leader>yl <Action>(CopyPathWithLineNumber)
+map <leader>yp <Action>(CopyContentRootPath)
+map <leader>yP <Action>(CopyPathFromRepositoryRootProvider)
+map <leader>yr <Action>(CopyReference)
 
 " ----------------------------- e ------
 let g:WhichKeyDesc_e = "<leader>e Execution/Run/Debug"
