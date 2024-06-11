@@ -26,7 +26,11 @@ async function readIdea(mapping) {
 }
 
 async function readZed(mapping) {
-  const zedSrc = await readFile('./zed-keymap.json', { encoding: 'utf8' })
+  let zedSrc = await readFile('./zed-keymap.json', { encoding: 'utf8' })
+  console.log(zedSrc)
+  zedSrc = zedSrc.replace(/^\s*\/\/.*?$/gm, '')
+  console.log(zedSrc)
+
   JSON.parse(zedSrc).forEach(({ bindings }) => {
     Object.entries(bindings).forEach(([key, action]) => {
       const match = key.match(/^space (space )?(\w) ?(\w)?$/)
