@@ -42,8 +42,8 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `j` `⌘⌥`  |                                    | MethodDown            |
 | `k` `⌘⌥`  |                                    | MethodUp              |
 |           |                                    |                       |
-| `j` `⌘⌃`  |                                    | NextDiff              |
-| `k` `⌘⌃`  |                                    | PreviousDiff          |
+| `j` `⌘⌃`  | editor::GoToHunk                   | NextDiff              |
+| `k` `⌘⌃`  | editor::GoToPrevHunk               | PreviousDiff          |
 | `h` `⌘⌃`  |                                    | Diff.PreChange        |
 | `l` `⌘⌃`  |                                    | Diff.NextChange       |
 |           |                                    |                       |
