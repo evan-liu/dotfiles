@@ -171,7 +171,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣sF` |  | `Vcs.Log.ShowAllAffected` |
 | `␣sh` |  | `Vcs.ShowTabbedFileHistory` |
 | `␣sH` |  | `LocalHistory.ShowHistory` |
-| `␣sl` |  | `Vcs.RollbackChangedLines` |
+| `␣sl` | `editor::RevertSelectedHunks` | `Vcs.RollbackChangedLines` |
 | `␣sm` |  | `Vcs.ShowMessageHistory` |
 | `␣sn` |  | `Git.CreateNewBranch` |
 | `␣sN` |  | `Github.Create.Pull.Request` |

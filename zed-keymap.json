@@ -73,6 +73,7 @@
       //
       "space s b": "branches::OpenRecent",
       "space s B": "editor::ToggleGitBlame",
+      "space s l": "editor::RevertSelectedHunks",
       //
       "space j d": "editor::GoToDefinition",
       "space j D": "editor::GoToDefinitionSplit",
