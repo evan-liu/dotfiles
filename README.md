@@ -138,7 +138,6 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | | | |
 | `␣␣l` | `workspace::CloseAllDocks` | `HideAllWindows` |
 | `␣la` |  | `ActivateAIAssistantToolWindow` |
-| `␣lA` |  | `ActivateHTTPClientAuthenticationLogToolWindow` |
 | `␣lb` |  | `ActivateBuildToolWindow` |
 | `␣lc` | `collab_panel::ToggleFocus` |  |
 | `␣ld` |  | `ActivateDebugToolWindow` |

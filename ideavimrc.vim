@@ -262,7 +262,6 @@ let g:WhichKeyDesc_l = "<leader>l ToolWindow"
 " --------------------------------------
 map <leader><leader>l <Action>(HideAllWindows)
 map <leader>la <Action>(ActivateAIAssistantToolWindow)
-map <leader>lA <Action>(ActivateHTTPClientAuthenticationLogToolWindow)
 map <leader>lb <Action>(ActivateBuildToolWindow)
 map <leader>ld <Action>(ActivateDebugToolWindow)
 map <leader>le <Action>(ActivateProblemsViewToolWindow)
@@ -274,8 +273,8 @@ map <leader>lt <Action>(ActivateTerminalToolWindow)
 map <leader>lv <Action>(ActivateVersionControlToolWindow)
 map <leader>lu <Action>(ActivatePullRequestsToolWindow)
 if &ide =~? 'rider'
-  map <leader>ln <Action>(ActivateNuGetToolWindow)
-  map <leader>lu <Action>(ActivateUnitTestsToolWindow)
+  map <leader>lN <Action>(ActivateNuGetToolWindow)
+  map <leader>lU <Action>(ActivateUnitTestsToolWindow)
 endif
 if &ide =~? 'pycharm'
   map <leader>lC <Action>(ActivatePythonConsoleToolWindow)
