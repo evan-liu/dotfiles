@@ -262,6 +262,7 @@ let g:WhichKeyDesc_l = "<leader>l ToolWindow"
 " --------------------------------------
 map <leader><leader>l <Action>(HideAllWindows)
 map <leader>la <Action>(ActivateAIAssistantToolWindow)
+map <leader>lA <Action>(ActivateHTTPClientAuthenticationLogToolWindow)
 map <leader>lb <Action>(ActivateBuildToolWindow)
 map <leader>ld <Action>(ActivateDebugToolWindow)
 map <leader>le <Action>(ActivateProblemsViewToolWindow)
@@ -273,8 +274,8 @@ map <leader>lt <Action>(ActivateTerminalToolWindow)
 map <leader>lv <Action>(ActivateVersionControlToolWindow)
 map <leader>lu <Action>(ActivatePullRequestsToolWindow)
 if &ide =~? 'rider'
-  map <leader>lN <Action>(ActivateNuGetToolWindow)
-  map <leader>lU <Action>(ActivateUnitTestsToolWindow)
+  map <leader>ln <Action>(ActivateNuGetToolWindow)
+  map <leader>lu <Action>(ActivateUnitTestsToolWindow)
 endif
 if &ide =~? 'pycharm'
   map <leader>lC <Action>(ActivatePythonConsoleToolWindow)
@@ -286,16 +287,17 @@ let g:WhichKeyDesc_v = "<leader>v View
 " --------------------------------------
 map <leader><leader>v <Action>(ViewMenu)
 
-map <leader>vg <Action>(ShowGutterIconsSettings)
 map <leader>vi <Action>(EditorGutterToggleGlobalIndentLines)
 map <leader>vl <Action>(EditorGutterToggleGlobalStickyLines)
 map <leader>vn <Action>(EditorGutterToggleGlobalLineNumbers)
 map <leader>vw <Action>(EditorToggleUseSoftWraps)
 
-map <leader>vN <Action>(NavbarLocationGroup)
+map <leader>vb <Action>(ViewToolButtons)
 map <leader>vs <Action>(ViewStatusBar)
-map <leader>vt <Action>(ViewToolButtons)
 map <leader>vz <Action>(ChangeIdeScale)
+
+map <leader>vG <Action>(ShowGutterIconsSettings)
+map <leader>vT <Action>(ConfigureEditorTabs)
 
 " ----------------------------- c ------
 let g:WhichKeyDesc_c = "<leader>c Code/Completion"

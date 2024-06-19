@@ -138,6 +138,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | | | |
 | `␣␣l` | `workspace::CloseAllDocks` | `HideAllWindows` |
 | `␣la` |  | `ActivateAIAssistantToolWindow` |
+| `␣lA` |  | `ActivateHTTPClientAuthenticationLogToolWindow` |
 | `␣lb` |  | `ActivateBuildToolWindow` |
 | `␣lc` | `collab_panel::ToggleFocus` |  |
 | `␣ld` |  | `ActivateDebugToolWindow` |
@@ -182,16 +183,16 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣su` |  | `Vcs.UpdateProject` |
 | | | |
 | `␣␣v` |  | `ViewMenu` |
-| `␣vb` | `workspace::ToggleBottomDock` |  |
-| `␣vg` |  | `ShowGutterIconsSettings` |
+| `␣vb` | `workspace::ToggleBottomDock` | `ViewToolButtons` |
+| `␣vG` |  | `ShowGutterIconsSettings` |
 | `␣vh` | `zed::Hide` |  |
 | `␣vi` | `editor::ToggleInlayHints` | `EditorGutterToggleGlobalIndentLines` |
 | `␣vl` | `workspace::ToggleLeftDock` | `EditorGutterToggleGlobalStickyLines` |
 | `␣vn` | `editor::ToggleLineNumbers` | `EditorGutterToggleGlobalLineNumbers` |
-| `␣vN` |  | `NavbarLocationGroup` |
 | `␣vr` | `workspace::ToggleRightDock` |  |
 | `␣vs` |  | `ViewStatusBar` |
-| `␣vt` | `theme_selector::Toggle` | `ViewToolButtons` |
+| `␣vt` | `editor::ToggleTabBar` |  |
+| `␣vT` | `theme_selector::Toggle` | `ConfigureEditorTabs` |
 | `␣vw` | `editor::ToggleSoftWrap` | `EditorToggleUseSoftWraps` |
 | `␣vz` |  | `ChangeIdeScale` |
 | | | |
