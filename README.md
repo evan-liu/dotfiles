@@ -142,6 +142,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣lb` |  | `ActivateBuildToolWindow` |
 | `␣lc` | `collab_panel::ToggleFocus` |  |
 | `␣ld` |  | `ActivateDebugToolWindow` |
+| `␣lD` |  | `ActivateDatabaseToolWindow` |
 | `␣le` | `diagnostics::Deploy` | `ActivateProblemsViewToolWindow` |
 | `␣lf` |  | `ActivateFindToolWindow` |
 | `␣ln` |  | `ActivateNotificationsToolWindow` |
