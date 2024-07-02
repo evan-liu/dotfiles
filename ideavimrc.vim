@@ -24,11 +24,6 @@ set ideastatusicon=gray
 " Plugins
 " ==============================================================================
 
-" https://github.com/AlexPl292/IdeaVim-EasyMotion#supported-commands
-" Install AceJump and IdeaVim-EasyMotion plugins
-set easymotion
-let g:EasyMotion_do_mapping=0
-
 " https://github.com/JetBrains/ideavim/wiki/NERDTree-support#supported-commands
 " j, k, o, p
 set NERDTree
@@ -70,11 +65,11 @@ set quickscope
 let g:qs_highlight_on_keys=['f', 'F', 't', 'T']
 
 " https://github.com/TheBlob42/idea-which-key
-set which-key
-set notimeout
-let g:WhichKey_ShowVimActions = "true"
-let g:WhichKey_DefaultDelay = 300
-let g:WhichKey_SortOrder = "by_key_prefix_first"
+" set which-key
+" set notimeout
+" let g:WhichKey_ShowVimActions = "true"
+" let g:WhichKey_DefaultDelay = 300
+" let g:WhichKey_SortOrder = "by_key_prefix_first"
 
 " ==============================================================================
 " Others Mappings
