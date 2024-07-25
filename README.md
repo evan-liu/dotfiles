@@ -164,10 +164,11 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣rf` |  | `ReplaceInPath` |
 | | | |
 | `␣␣s` |  | `Vcs.QuickListPopupAction` |
-| `␣sa` |  | `Vcs.ToggleAmendCommitMode` |
+| `␣sa` |  | `ChangesView.AddUnversioned` |
 | `␣sb` | `branches::OpenRecent` | `Git.Branches` |
 | `␣sB` | `editor::ToggleGitBlame` | `Annotate` |
 | `␣sc` |  | `CheckinProject` |
+| `␣sC` |  | `Vcs.ToggleAmendCommitMode` |
 | `␣sd` |  | `Compare.SameVersion` |
 | `␣sf` |  | `Git.Fetch` |
 | `␣sF` |  | `Vcs.Log.ShowAllAffected` |

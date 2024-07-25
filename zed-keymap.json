@@ -4,8 +4,14 @@
     "bindings": {
       "ctrl-y": "vim::JoinLines",
       //
-      "ctrl-j": "vim::ScrollDown",
-      "ctrl-k": "vim::ScrollUp",
+      "ctrl-j": [
+        "workspace::SendKeystrokes",
+        "5 j"
+      ],
+      "ctrl-k": [
+        "workspace::SendKeystrokes",
+        "5 k"
+      ],
       //
       "ctrl-h": "pane::GoBack",
       "ctrl-l": "pane::GoForward",

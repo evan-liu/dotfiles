@@ -83,8 +83,8 @@ map <C-y> <Action>(EditorJoinLines)
 " Redo
 map U <C-r>
 
-map <C-j> <C-d>zz
-map <C-k> <C-u>zz
+map <C-j> 5j
+map <C-k> 5k
 
 map <C-h> <Action>(Back)
 map <C-l> <Action>(Forward)
@@ -180,10 +180,11 @@ map <leader>dh <Action>(ShowHoverInfo)
 let g:WhichKeyDesc_s = "<leader>s Source Control"
 " --------------------------------------
 map <leader><leader>s <Action>(Vcs.QuickListPopupAction)
-map <leader>sa <Action>(Vcs.ToggleAmendCommitMode)
+map <leader>sa <Action>(ChangesView.AddUnversioned)
 map <leader>sb <Action>(Git.Branches)
 map <leader>sB <Action>(Annotate)
 map <leader>sc <Action>(CheckinProject)
+map <leader>sC <Action>(Vcs.ToggleAmendCommitMode)
 map <leader>sd <Action>(Compare.SameVersion)
 map <leader>sf <Action>(Git.Fetch)
 map <leader>sF <Action>(Vcs.Log.ShowAllAffected)
