@@ -98,7 +98,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣fa` | `command_palette::Toggle` | `GotoAction` |
 | `␣fc` |  | `GotoClass` |
 | `␣ff` | `file_finder::Toggle` | `GotoFile` |
-| `␣fj` |  | `RecentFiles` |
+| `␣fj` | `file_finder::Toggle` | `RecentFiles` |
 | `␣fk` |  | `RecentChangedFiles` |
 | `␣fl` |  | `RecentLocations` |
 | `␣fp` | `projects::OpenRecent` | `ManageRecentProjects` |
