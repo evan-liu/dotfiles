@@ -124,7 +124,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣␣k` |  | `Refactorings.QuickListPopupAction` |
 | `␣kc` |  | `IntroduceConstant` |
 | `␣kd` |  | `SafeDelete` |
-| `␣kf` |  | `IntroduceField` |
+| `␣kF` |  | `IntroduceField` |
 | `␣ki` |  | `ExtractInterface` |
 | `␣kl` |  | `Inline` |
 | `␣km` |  | `ExtractMethod` |
@@ -133,6 +133,7 @@ Some of them are using [Karabiner-Elements](https://github.com/pqrs-org/Karabine
 | `␣kr` | `editor::Rename` | `RenameElement` |
 | `␣kR` |  | `RenameFile` |
 | `␣ks` |  | `ChangeSignature` |
+| `␣kt` |  | `TypeScriptExtractTypeAlias` |
 | `␣ku` |  | `MembersPullUp` |
 | `␣kv` |  | `IntroduceVariable` |
 | | | |
