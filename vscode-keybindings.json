@@ -1,10 +1,5 @@
 [
   {
-    "key": "escape", // ⎋
-    "command": "workbench.action.focusActiveEditorGroup",
-    "when": "filesExplorerFocus"
-  },
-  {
     "key": "cmd+escape", // ⌘ ⎋
     "command": "runCommands",
     "args": {
@@ -12,8 +7,9 @@
     }
   },
   {
-    "key": "cmd+0", // ⌘ 0
-    "command": "workbench.action.zoomReset"
+    "key": "ctrl+escape", // ⌃ ⎋
+    "command": "workbench.action.focusActiveEditorGroup",
+    "when": "!editorTextFocus"
   },
 
   {
