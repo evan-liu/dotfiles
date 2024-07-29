@@ -135,8 +135,8 @@
     { "before": ["<leader>", "z", "S"], "commands": ["workbench.action.openSettingsJson"] }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
-    { "before": ["y"], "after": ["\"", "+", "y"] }, // Yank to system clipboard
-    { "before": ["<C-y>"], "commands": ["editor.action.joinLines"] }, // Was S-j, remapped below
+    { "before": ["y"], "after": ["\"", "+", "y"] },
+    { "before": ["<C-y>"], "commands": ["editor.action.joinLines"] },
 
     { "before": ["<leader>", "a", "c"], "commands": ["editor.action.transformToCamelcase"] },
     { "before": ["<leader>", "a", "k"], "commands": ["editor.action.transformToKebabcase"] },
