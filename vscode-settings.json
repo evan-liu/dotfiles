@@ -136,6 +136,7 @@
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     { "before": ["y"], "after": ["\"", "+", "y"] }, // Yank to system clipboard
+    { "before": ["<C-y>"], "commands": ["editor.action.joinLines"] }, // Was S-j, remapped below
 
     { "before": ["<leader>", "a", "c"], "commands": ["editor.action.transformToCamelcase"] },
     { "before": ["<leader>", "a", "k"], "commands": ["editor.action.transformToKebabcase"] },
@@ -208,5 +209,6 @@
   "explorer.confirmPasteNative": false,
   "explorer.autoReveal": false,
   "workbench.statusBar.visible": false,
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "git.openRepositoryInParentFolders": "always"
 }

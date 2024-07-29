@@ -205,6 +205,7 @@ map <leader>su <Action>(Vcs.UpdateProject)
 let g:WhichKeyDesc_a = "<leader>a SwitchCase"
 " --------------------------------------
 map <leader><leader>a <Action>(osmedile.intellij.stringmanip.SwitchCasePopup)
+map <leader>aa <Action>(StringManipulation.ToSentenceCaseOrCamelCase)
 map <leader>ac <Action>(StringManipulation.ToCamelCase)
 map <leader>as <Action>(StringManipulation.ToSnakeCase)
 map <leader>ak <Action>(StringManipulation.ToKebabCase)
