@@ -120,6 +120,7 @@
 
     // x - close
     { "before": ["<leader>", "<leader>", "x"], "commands": ["workbench.action.closeFolder"] },
+    { "before": ["<leader>", "x", "n"], "commands": ["notifications.clearAll"] },
     { "before": ["<leader>", "x", "w"], "commands": ["workbench.action.closeWindow"] },
 
     // y - Yank
