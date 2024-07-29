@@ -26,7 +26,7 @@
     { "before": ["<leader>", "a", "t"], "commands": ["editor.action.transformToTitlecase"] },
     { "before": ["<leader>", "a", "u"], "commands": ["editor.action.transformToUppercase"] },
 
-    // c - Code Completion/Format
+    // c - Code Completion / Format
     { "before": ["<leader>", "c", "a"], "commands": ["editor.action.autoFix"] },
     { "before": ["<leader>", "c", "c"], "commands": ["editor.action.triggerSuggest"] },
     { "before": ["<leader>", "c", "f"], "commands": ["editor.action.formatDocument"] },
