@@ -30,7 +30,7 @@
     { "before": ["<leader>", "c", "a"], "commands": ["editor.action.autoFix"] },
     { "before": ["<leader>", "c", "c"], "commands": ["editor.action.triggerSuggest"] },
     { "before": ["<leader>", "c", "f"], "commands": ["editor.action.formatDocument"] },
-    { "before": ["<leader>", "c", "i"], "commands": ["editor.action.quickFixImports"] },
+    { "before": ["<leader>", "c", "i"], "commands": ["editor.action.organizeImports"] },
     { "before": ["<leader>", "c", "q"], "commands": ["editor.action.quickFix"] },
     { "before": ["<leader>", "c", "s"], "commands": ["editor.action.surroundWithSnippet"] },
     { "before": ["<leader>", "c", "t"], "commands": ["editor.action.insertSnippet"] },
