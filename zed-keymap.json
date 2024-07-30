@@ -108,10 +108,6 @@
       "space x x": "pane::CloseActiveItem",
       "space space x": "workspace::CloseWindow",
       //
-      "space v l": "workspace::ToggleLeftDock",
-      "space v r": "workspace::ToggleRightDock",
-      "space v b": "workspace::ToggleBottomDock",
-      //
       "space v h": "zed::Hide",
       "space v t": "editor::ToggleTabBar",
       "space v n": "editor::ToggleLineNumbers",

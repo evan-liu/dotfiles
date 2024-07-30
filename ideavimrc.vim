@@ -189,8 +189,8 @@ let g:WhichKeyDesc_j = "<leader>j Jump/Goto (Code)"
 " --------------------------------------
 map <leader><leader>j <Action>(EditorPopupMenu.GoTo)
 map <leader>jd <Action>(GotoDeclaration)
+map <leader>je <Action>(GotoTest)
 map <leader>jt <Action>(GotoTypeDeclaration)
-map <leader>jT <Action>(GotoTest)
 map <leader>ji <Action>(GotoImplementation)
 map <leader>jo <Action>(RevealGroup)
 map <leader>jr <Action>(GotoRelated)
@@ -227,7 +227,6 @@ let g:WhichKeyDesc_l = "<leader>l ToolWindow"
 " --------------------------------------
 map <leader><leader>l <Action>(HideAllWindows)
 map <leader>la <Action>(ActivateAIAssistantToolWindow)
-map <leader>lA <Action>(ActivateHTTPClientAuthenticationLogToolWindow)
 map <leader>lb <Action>(ActivateBuildToolWindow)
 map <leader>ld <Action>(ActivateDebugToolWindow)
 map <leader>lD <Action>(ActivateDatabaseToolWindow)

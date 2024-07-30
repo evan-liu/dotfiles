@@ -129,10 +129,12 @@
 
     // z - Settings
     { "before": ["<leader>", "<leader>", "z"], "commands": ["workbench.action.openGlobalSettings"] },
+    { "before": ["<leader>", "z", "j"], "commands": ["workbench.action.openSettingsJson"] },
+    { "before": ["<leader>", "z", "J"], "commands": ["workbench.action.openGlobalKeybindingsFile"] },
     { "before": ["<leader>", "z", "k"], "commands": ["workbench.action.openGlobalKeybindings"] },
-    { "before": ["<leader>", "z", "K"], "commands": ["workbench.action.openGlobalKeybindingsFile"] },
+    { "before": ["<leader>", "z", "K"], "commands": ["workbench.action.openDefaultKeybindingsFile"] },
     { "before": ["<leader>", "z", "s"], "commands": ["workbench.action.openGlobalSettings"] },
-    { "before": ["<leader>", "z", "S"], "commands": ["workbench.action.openSettingsJson"] }
+    { "before": ["<leader>", "z", "S"], "commands": ["workbench.action.openRawDefaultSettings"] }
   ],
   "vim.visualModeKeyBindingsNonRecursive": [
     { "before": ["y"], "after": ["\"", "+", "y"] },
