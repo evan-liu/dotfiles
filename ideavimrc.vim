@@ -329,7 +329,12 @@ map <leader>yf <Action>(CopyFileName)
 map <leader>yl <Action>(CopyPathWithLineNumber)
 map <leader>yp <Action>(CopyContentRootPath)
 map <leader>yP <Action>(CopyPathFromRepositoryRootProvider)
-map <leader>yr <Action>(CopyReference)
+map <leader>yr <Action>(CopyReference
+
+" ----------------------------- z ------
+let g:WhichKeyDesc_z = "<leader>z Settings"
+" --------------------------------------
+map <leader>zs <Action>(ShowSettings)
 
 " --------------------------------------
 " \ - IdeaVim
