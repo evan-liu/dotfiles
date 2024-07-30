@@ -55,9 +55,19 @@
     "when": "(editorTextFocus && !textCompareEditorActive) || textCompareEditorVisible"
   },
   {
+    "key": "ctrl+cmd+j",
+    "command": "workbench.action.compareEditor.nextChange",
+    "when": "textCompareEditorVisible"
+  },
+  {
     "key": "ctrl+cmd+k", // ⌘⌃ k
     "command": "workbench.action.editor.previousChange",
     "when": "(editorTextFocus && !textCompareEditorActive) || textCompareEditorVisible"
+  },
+  {
+    "key": "ctrl+cmd+k",
+    "command": "workbench.action.compareEditor.previousChange",
+    "when": "textCompareEditorVisible"
   },
 
   {
