@@ -116,19 +116,43 @@ map <D-A-C-x> <Plug>RemoveOccurrence
 map <D-A-C-a> <Plug>AllWholeOccurrences
 map <D-A-C-b> <Plug>AllOccurrences
 
-" ----------------------------- y ------
-let g:WhichKeyDesc_y = "<leader>y yank/copy"
+" ----------------------------- a ------
+let g:WhichKeyDesc_a = "<leader>a SwitchCase"
 " --------------------------------------
-noremap y "+y
-noremap yy "+yy
+map <leader><leader>a <Action>(osmedile.intellij.stringmanip.SwitchCasePopup)
+map <leader>aa <Action>(StringManipulation.ToSentenceCaseOrCamelCase)
+map <leader>ac <Action>(StringManipulation.ToCamelCase)
+map <leader>as <Action>(StringManipulation.ToSnakeCase)
+map <leader>ak <Action>(StringManipulation.ToKebabCase)
+map <leader>ap <Action>(StringManipulation.ToPascalCase)
+map <leader>al <Action>(osmedile.intellij.stringmanip.ToLowerCaseAction)
+map <leader>au <Action>(osmedile.intellij.stringmanip.ToUpperCaseAction)
+map <leader>ar <Action>(osmedile.intellij.stringmanip.SwapCaseAction)
+map <leader>aC <Action>(osmedile.intellij.stringmanip.WordsCapitalizeAction)
+map <leader>aS <Action>(StringManipulation.ToScreamingSnakeCase)
+map <leader>at <Action>(osmedile.intellij.stringmanip.ToCamelCaseAction)
 
-map <leader><leader>y <Action>(CopyReferencePopupGroup)
-map <leader>ya <Action>(CopyAbsolutePath)
-map <leader>yf <Action>(CopyFileName)
-map <leader>yl <Action>(CopyPathWithLineNumber)
-map <leader>yp <Action>(CopyContentRootPath)
-map <leader>yP <Action>(CopyPathFromRepositoryRootProvider)
-map <leader>yr <Action>(CopyReference)
+" ----------------------------- c ------
+let g:WhichKeyDesc_c = "<leader>c Code/Completion"
+" --------------------------------------
+map <leader><leader>c <Action>(CodeCompletion)
+map <leader>cc <Action>(CodeCompletion)
+map <leader>cC <Action>(SmartTypeCompletion)
+map <leader>cf <Action>(ReformatCode)
+map <leader>ci <Action>(OptimizeImports)
+map <leader>cs <Action>(SurroundWith)
+map <leader>ct <Action>(InsertLiveTemplate)
+map <leader>cu <Action>(Unwrap)
+
+" ----------------------------- d ------
+let g:WhichKeyDesc_d = "<leader>d Doc/Info"
+" --------------------------------------
+map <leader><leader>d <Action>(QuickJavaDoc)
+map <leader>di <Action>(QuickImplementations)
+map <leader>de <Action>(ShowErrorDescription)
+map <leader>dd <Action>(QuickJavaDoc)
+map <leader>dp <Action>(ParameterInfo)
+map <leader>dh <Action>(ShowHoverInfo)
 
 " ----------------------------- e ------
 let g:WhichKeyDesc_e = "<leader>e Execution/Run/Debug"
@@ -159,63 +183,6 @@ map <leader>fj <Action>(RecentFiles)
 map <leader>fk <Action>(RecentChangedFiles)
 map <leader>fl <Action>(RecentLocations)
 map <leader>fp <Action>(ManageRecentProjects)
-
-" ----------------------------- r ------
-let g:WhichKeyDesc_r = "<leader>r Replace"
-" --------------------------------------
-map <leader><leader>r <Action>(Replace)
-map <leader>rf <Action>(ReplaceInPath)
-
-" ----------------------------- d ------
-let g:WhichKeyDesc_d = "<leader>d Doc/Info"
-" --------------------------------------
-map <leader><leader>d <Action>(QuickJavaDoc)
-map <leader>di <Action>(QuickImplementations)
-map <leader>de <Action>(ShowErrorDescription)
-map <leader>dd <Action>(QuickJavaDoc)
-map <leader>dp <Action>(ParameterInfo)
-map <leader>dh <Action>(ShowHoverInfo)
-
-" ----------------------------- s ------
-let g:WhichKeyDesc_s = "<leader>s Source Control"
-" --------------------------------------
-map <leader><leader>s <Action>(Vcs.QuickListPopupAction)
-map <leader>sa <Action>(ChangesView.AddUnversioned)
-map <leader>sb <Action>(Git.Branches)
-map <leader>sB <Action>(Annotate)
-map <leader>sc <Action>(CheckinProject)
-map <leader>sC <Action>(Vcs.ToggleAmendCommitMode)
-map <leader>sd <Action>(Compare.SameVersion)
-map <leader>sf <Action>(Git.Fetch)
-map <leader>sF <Action>(Vcs.Log.ShowAllAffected)
-map <leader>sh <Action>(Vcs.ShowTabbedFileHistory)
-map <leader>sH <Action>(LocalHistory.ShowHistory)
-map <leader>sl <Action>(Vcs.RollbackChangedLines)
-map <leader>sm <Action>(Vcs.ShowMessageHistory)
-map <leader>sn <Action>(Git.CreateNewBranch)
-map <leader>sN <Action>(Github.Create.Pull.Request)
-map <leader>sp <Action>(Vcs.Push)
-map <leader>sr <Action>(ChangesView.Revert)
-map <leader>ss <Action>(Git.Stash)
-map <leader>sS <Action>(Git.Unstash)
-map <leader>st <Action>(Git.Tag)
-map <leader>su <Action>(Vcs.UpdateProject)
-
-" ----------------------------- a ------
-let g:WhichKeyDesc_a = "<leader>a SwitchCase"
-" --------------------------------------
-map <leader><leader>a <Action>(osmedile.intellij.stringmanip.SwitchCasePopup)
-map <leader>aa <Action>(StringManipulation.ToSentenceCaseOrCamelCase)
-map <leader>ac <Action>(StringManipulation.ToCamelCase)
-map <leader>as <Action>(StringManipulation.ToSnakeCase)
-map <leader>ak <Action>(StringManipulation.ToKebabCase)
-map <leader>ap <Action>(StringManipulation.ToPascalCase)
-map <leader>al <Action>(osmedile.intellij.stringmanip.ToLowerCaseAction)
-map <leader>au <Action>(osmedile.intellij.stringmanip.ToUpperCaseAction)
-map <leader>ar <Action>(osmedile.intellij.stringmanip.SwapCaseAction)
-map <leader>aC <Action>(osmedile.intellij.stringmanip.WordsCapitalizeAction)
-map <leader>aS <Action>(StringManipulation.ToScreamingSnakeCase)
-map <leader>at <Action>(osmedile.intellij.stringmanip.ToCamelCaseAction)
 
 " ----------------------------- j ------
 let g:WhichKeyDesc_j = "<leader>j Jump/Goto (Code)"
@@ -282,6 +249,50 @@ if &ide =~? 'pycharm'
   map <leader>lP <Action>(ActivatePythonPackagesToolWindow)
 endif
 
+" ----------------------------- n ------
+let g:WhichKeyDesc_n = "<leader>n New/Generate"
+" --------------------------------------
+map <leader><leader>n <Action>(NewElementSamePlace)
+map <leader>nd <Action>(NewDir)
+map <leader>nf <Action>(NewFile)
+map <leader>ng <Action>(Generate)
+map <leader>no <Action>(OverrideMethods)
+map <leader>ns <Action>(NewScratchFile)
+if &ide =~? 'webstorm'
+  map <leader>ni <Action>(Generate.Missing.Members.TypeScript)
+endif
+
+" ----------------------------- r ------
+let g:WhichKeyDesc_r = "<leader>r Replace"
+" --------------------------------------
+map <leader><leader>r <Action>(Replace)
+map <leader>rf <Action>(ReplaceInPath)
+
+" ----------------------------- s ------
+let g:WhichKeyDesc_s = "<leader>s Source Control"
+" --------------------------------------
+map <leader><leader>s <Action>(Vcs.QuickListPopupAction)
+map <leader>sa <Action>(ChangesView.AddUnversioned)
+map <leader>sb <Action>(Git.Branches)
+map <leader>sB <Action>(Annotate)
+map <leader>sc <Action>(CheckinProject)
+map <leader>sC <Action>(Vcs.ToggleAmendCommitMode)
+map <leader>sd <Action>(Compare.SameVersion)
+map <leader>sf <Action>(Git.Fetch)
+map <leader>sF <Action>(Vcs.Log.ShowAllAffected)
+map <leader>sh <Action>(Vcs.ShowTabbedFileHistory)
+map <leader>sH <Action>(LocalHistory.ShowHistory)
+map <leader>sl <Action>(Vcs.RollbackChangedLines)
+map <leader>sm <Action>(Vcs.ShowMessageHistory)
+map <leader>sn <Action>(Git.CreateNewBranch)
+map <leader>sN <Action>(Github.Create.Pull.Request)
+map <leader>sp <Action>(Vcs.Push)
+map <leader>sr <Action>(ChangesView.Revert)
+map <leader>ss <Action>(Git.Stash)
+map <leader>sS <Action>(Git.Unstash)
+map <leader>st <Action>(Git.Tag)
+map <leader>su <Action>(Vcs.UpdateProject)
+
 " ----------------------------- v ------
 let g:WhichKeyDesc_v = "<leader>v View
 " --------------------------------------
@@ -299,18 +310,6 @@ map <leader>vz <Action>(ChangeIdeScale)
 map <leader>vG <Action>(ShowGutterIconsSettings)
 map <leader>vT <Action>(ConfigureEditorTabs)
 
-" ----------------------------- c ------
-let g:WhichKeyDesc_c = "<leader>c Code/Completion"
-" --------------------------------------
-map <leader><leader>c <Action>(CodeCompletion)
-map <leader>cc <Action>(CodeCompletion)
-map <leader>cC <Action>(SmartTypeCompletion)
-map <leader>cf <Action>(ReformatCode)
-map <leader>ci <Action>(OptimizeImports)
-map <leader>cs <Action>(SurroundWith)
-map <leader>ct <Action>(InsertLiveTemplate)
-map <leader>cu <Action>(Unwrap)
-
 " ----------------------------- x ------
 let g:WhichKeyDesc_x = "<leader>x Close/Hide/Delete"
 " --------------------------------------
@@ -318,18 +317,19 @@ map <leader><leader>x <Action>(CloseProject)
 map <leader>xn <Action>(CloseAllNotifications)
 map <leader>xx <Action>(CloseContent)
 
-" ----------------------------- n ------
-let g:WhichKeyDesc_n = "<leader>n New/Generate"
+" ----------------------------- y ------
+let g:WhichKeyDesc_y = "<leader>y yank/copy"
 " --------------------------------------
-map <leader><leader>n <Action>(NewElementSamePlace)
-map <leader>nd <Action>(NewDir)
-map <leader>nf <Action>(NewFile)
-map <leader>ng <Action>(Generate)
-map <leader>no <Action>(OverrideMethods)
-map <leader>ns <Action>(NewScratchFile)
-if &ide =~? 'webstorm'
-  map <leader>ni <Action>(Generate.Missing.Members.TypeScript)
-endif
+noremap y "+y
+noremap yy "+yy
+
+map <leader><leader>y <Action>(CopyReferencePopupGroup)
+map <leader>ya <Action>(CopyAbsolutePath)
+map <leader>yf <Action>(CopyFileName)
+map <leader>yl <Action>(CopyPathWithLineNumber)
+map <leader>yp <Action>(CopyContentRootPath)
+map <leader>yP <Action>(CopyPathFromRepositoryRootProvider)
+map <leader>yr <Action>(CopyReference)
 
 " --------------------------------------
 " \ - IdeaVim

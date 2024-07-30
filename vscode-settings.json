@@ -14,7 +14,7 @@
 
     { "before": ["g", "s"], "commands": ["workbench.files.action.showActiveFileInExplorer"] },
 
-    { "before": ["<leader>", "w"], "commands": ["workbench.action.files.save"] },
+    { "before": ["<leader>", "w"], "commands": ["workbench.action.files.saveFiles"] },
     { "before": ["<leader>", "enter"], "commands": ["editor.action.quickFix"] },
 
     // a - Switch Case
@@ -165,6 +165,9 @@
       "before": ["<leader>", "k", "t"],
       "commands": [{ "command": "editor.action.codeAction", "args": { "kind": "refactor.extract.type" } }]
     }
+  ],
+  "vim.insertModeKeyBindingsNonRecursive": [
+    { "before": ["<C-y>"], "commands": ["editor.action.joinLines"] } //
   ],
   "vim.highlightedyank.enable": true,
 
