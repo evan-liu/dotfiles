@@ -127,6 +127,16 @@
     "key": "cmd+w",
     "command": "workbench.action.terminal.killActiveTab",
     "when": "terminalFocus"
+  },
+  {
+    "key": "cmd+n",
+    "command": "explorer.newFile",
+    "when": "filesExplorerFocus"
+  },
+  {
+    "key": "cmd+shift+n",
+    "command": "explorer.newFolder",
+    "when": "filesExplorerFocus"
   }
   //
 ]
