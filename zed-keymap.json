@@ -70,17 +70,18 @@
       "space a s": "editor::ConvertToSnakeCase",
       "space a t": "editor::ConvertToTitleCase",
       //
+      "space space c": "editor::ShowCompletions",
+      "space c c": "editor::ShowCompletions",
+      //
+      "space d h": "editor::Hover",
+      //
+      "space space e": "task::Spawn",
+      //
       "space f f": "file_finder::Toggle",
       "space f j": "file_finder::Toggle",
       "space f a": "command_palette::Toggle",
       "space f p": "projects::OpenRecent",
       "space f t": "pane::DeploySearch",
-      //
-      "space d h": "editor::Hover",
-      //
-      "space s b": "branches::OpenRecent",
-      "space s B": "editor::ToggleGitBlame",
-      "space s l": "editor::RevertSelectedHunks",
       //
       "space j d": "editor::GoToDefinition",
       "space j D": "editor::GoToDefinitionSplit",
@@ -88,7 +89,6 @@
       "space j T": "editor::GoToTypeDefinitionSplit",
       "space j i": "editor::GoToImplementation",
       "space j I": "editor::GoToImplementationSplit",
-      //
       "space j u": "editor::FindAllReferences",
       "space j m": "outline::Toggle",
       //
@@ -100,13 +100,15 @@
       "space l c": "collab_panel::ToggleFocus",
       "space l e": "diagnostics::Deploy",
       //
-      "space space e": "task::Spawn",
-      //
-      "space space c": "editor::ShowCompletions",
-      "space c c": "editor::ShowCompletions",
+      "space s b": "branches::OpenRecent",
+      "space s B": "editor::ToggleGitBlame",
+      "space s l": "editor::RevertSelectedHunks",
       //
       "space x x": "pane::CloseActiveItem",
       "space space x": "workspace::CloseWindow",
+      //
+      "space y a": "editor::CopyPath",
+      "space y p": "editor::CopyRelativePath",
       //
       "space v h": "zed::Hide",
       "space v t": "editor::ToggleTabBar",
