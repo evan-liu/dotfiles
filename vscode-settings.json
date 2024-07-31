@@ -190,6 +190,7 @@
 
   "git.autofetch": true,
   "git.confirmSync": false,
+  "git.allowForcePush": true,
   "gitlens.codeLens.enabled": false,
   "gitlens.currentLine.enabled": false,
   "gitlens.showWelcomeOnInstall": false,
