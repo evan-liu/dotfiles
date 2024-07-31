@@ -116,7 +116,6 @@
       "space v n": "editor::ToggleLineNumbers",
       "space v w": "editor::ToggleSoftWrap",
       "space v i": "editor::ToggleInlayHints",
-      "space v T": "theme_selector::Toggle",
       //
       "space z k": "zed::OpenKeymap",
       "space z K": "zed::OpenDefaultKeymap",
