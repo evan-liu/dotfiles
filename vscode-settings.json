@@ -122,6 +122,7 @@
     { "before": ["<leader>", "<leader>", "x"], "commands": ["workbench.action.closeFolder"] },
     { "before": ["<leader>", "x", "n"], "commands": ["notifications.clearAll"] },
     { "before": ["<leader>", "x", "w"], "commands": ["workbench.action.closeWindow"] },
+    { "before": ["<leader>", "x", "x"], "commands": ["workbench.action.closeActiveEditor"] },
 
     // y - Yank
     { "before": ["<leader>", "y", "a"], "commands": ["copyFilePath"] },

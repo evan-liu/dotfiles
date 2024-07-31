@@ -104,8 +104,9 @@
       "space s B": "editor::ToggleGitBlame",
       "space s l": "editor::RevertSelectedHunks",
       //
-      "space x x": "pane::CloseActiveItem",
       "space space x": "workspace::CloseWindow",
+      "space x n": "workspace::ClearAllNotifications",
+      "space x x": "pane::CloseActiveItem",
       //
       "space y a": "editor::CopyPath",
       "space y p": "editor::CopyRelativePath",
