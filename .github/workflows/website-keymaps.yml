@@ -15,8 +15,8 @@ jobs:
         with:
           script: |
             github.rest.actions.createWorkflowDispatch({
-              owner: evan-liu,
-              repo: evan-liu.github.io,
+              owner: 'evan-liu',
+              repo: 'evan-liu.github.io',
               workflow_id: 'keymaps.yml',
               ref: 'main',
             })
