@@ -109,12 +109,12 @@ map <C-w>x <Action>(Unsplit)
 " --------------------------------------
 " multiple-cursors
 " --------------------------------------
+map <D-A-C-a> <Plug>AllWholeOccurrences
+map <D-A-C-b> <Plug>AllOccurrences
 map <D-A-C-f> <Plug>NextWholeOccurrence
 map <D-A-C-g> <Plug>NextOccurrence
 map <D-A-C-s> <Plug>SkipOccurrence
 map <D-A-C-x> <Plug>RemoveOccurrence
-map <D-A-C-a> <Plug>AllWholeOccurrences
-map <D-A-C-b> <Plug>AllOccurrences
 
 " ----------------------------- a ------
 let g:WhichKeyDesc_a = "<leader>a SwitchCase"
