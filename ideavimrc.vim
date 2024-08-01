@@ -136,7 +136,6 @@ map <leader>at <Action>(osmedile.intellij.stringmanip.ToCamelCaseAction)
 " ----------------------------- c ------
 let g:WhichKeyDesc_c = "<leader>c Code/Completion"
 " --------------------------------------
-map <leader><leader>c <Action>(CodeCompletion)
 map <leader>cc <Action>(CodeCompletion)
 map <leader>cC <Action>(SmartTypeCompletion)
 map <leader>cf <Action>(ReformatCode)
@@ -148,7 +147,6 @@ map <leader>cu <Action>(Unwrap)
 " ----------------------------- d ------
 let g:WhichKeyDesc_d = "<leader>d Doc/Info"
 " --------------------------------------
-map <leader><leader>d <Action>(QuickJavaDoc)
 map <leader>di <Action>(QuickImplementations)
 map <leader>de <Action>(ShowErrorDescription)
 map <leader>dd <Action>(QuickJavaDoc)

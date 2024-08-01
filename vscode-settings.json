@@ -27,7 +27,6 @@
     { "before": ["<leader>", "a", "u"], "commands": ["editor.action.transformToUppercase"] },
 
     // c - Code Completion / Format
-    { "before": ["<leader>", "<leader>", "c"], "commands": ["editor.action.triggerSuggest"] },
     { "before": ["<leader>", "c", "a"], "commands": ["editor.action.autoFix"] },
     { "before": ["<leader>", "c", "c"], "commands": ["editor.action.triggerSuggest"] },
     { "before": ["<leader>", "c", "f"], "commands": ["editor.action.formatDocument"] },
@@ -37,7 +36,6 @@
     { "before": ["<leader>", "c", "t"], "commands": ["editor.action.insertSnippet"] },
 
     // d - Doc / Info
-    { "before": ["<leader>", "<leader>", "d"], "commands": ["editor.action.peekDefinition"] },
     { "before": ["<leader>", "d", "d"], "commands": ["editor.action.peekDefinition"] },
     { "before": ["<leader>", "d", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] },
     { "before": ["<leader>", "d", "i"], "commands": ["editor.action.peekImplementation"] },
@@ -121,9 +119,8 @@
     { "before": ["<leader>", "v", "z"], "commands": ["workbench.action.zoomReset"] },
 
     // x - close
-    { "before": ["<leader>", "<leader>", "x"], "commands": ["workbench.action.closeFolder"] },
+    { "before": ["<leader>", "<leader>", "x"], "commands": ["workbench.action.closeWindow"] },
     { "before": ["<leader>", "x", "n"], "commands": ["notifications.clearAll"] },
-    { "before": ["<leader>", "x", "w"], "commands": ["workbench.action.closeWindow"] },
     { "before": ["<leader>", "x", "x"], "commands": ["workbench.action.closeActiveEditor"] },
 
     // y - Yank
@@ -131,7 +128,6 @@
     { "before": ["<leader>", "y", "p"], "commands": ["copyRelativeFilePath"] },
 
     // z - Settings
-    { "before": ["<leader>", "<leader>", "z"], "commands": ["workbench.action.openGlobalSettings"] },
     { "before": ["<leader>", "z", "j"], "commands": ["workbench.action.openSettingsJson"] },
     { "before": ["<leader>", "z", "J"], "commands": ["workbench.action.openGlobalKeybindingsFile"] },
     { "before": ["<leader>", "z", "k"], "commands": ["workbench.action.openGlobalKeybindings"] },

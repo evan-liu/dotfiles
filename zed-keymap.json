@@ -70,7 +70,6 @@
       "space a s": "editor::ConvertToSnakeCase",
       "space a t": "editor::ConvertToTitleCase",
       //
-      "space space c": "editor::ShowCompletions",
       "space c c": "editor::ShowCompletions",
       //
       "space d h": "editor::Hover",
@@ -111,7 +110,6 @@
       "space y a": "editor::CopyPath",
       "space y p": "editor::CopyRelativePath",
       //
-      "space v h": "zed::Hide",
       "space v t": "editor::ToggleTabBar",
       "space v n": "editor::ToggleLineNumbers",
       "space v w": "editor::ToggleSoftWrap",
