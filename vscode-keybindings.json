@@ -93,13 +93,8 @@
   },
 
   {
-    "key": "ctrl+alt+cmd+j", // ⌘⌥⌃ j
-    "command": "editor.action.insertCursorBelow",
-    "when": "editorTextFocus"
-  },
-  {
-    "key": "ctrl+alt+cmd+k", // ⌘⌥⌃ k
-    "command": "editor.action.insertCursorAbove",
+    "key": "ctrl+alt+cmd+e", // ⌘⌥⌃ e
+    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
     "when": "editorTextFocus"
   },
   {
@@ -108,22 +103,13 @@
     "when": "editorTextFocus"
   },
   {
-    "key": "ctrl+alt+cmd+enter", // ⌘⌥⌃ ⏎
-    "command": "editor.action.insertCursorAtEndOfEachLineSelected",
-    "when": "editorTextFocus"
-  },
-
-  // f20 - For Karabiner-Elements
-  {
-    "key": "f20 k",
-    "command": "editor.action.insertSnippet",
-    "args": { "snippet": "($1) => $0" },
+    "key": "ctrl+alt+cmd+j", // ⌘⌥⌃ j
+    "command": "editor.action.insertCursorBelow",
     "when": "editorTextFocus"
   },
   {
-    "key": "f20 l",
-    "command": "editor.action.insertSnippet",
-    "args": { "snippet": "console.log($0)" },
+    "key": "ctrl+alt+cmd+k", // ⌘⌥⌃ k
+    "command": "editor.action.insertCursorAbove",
     "when": "editorTextFocus"
   },
 
@@ -147,6 +133,20 @@
     "key": "cmd+shift+n",
     "command": "explorer.newFolder",
     "when": "filesExplorerFocus"
+  },
+
+  // f20 - For Karabiner-Elements
+  {
+    "key": "f20 k",
+    "command": "editor.action.insertSnippet",
+    "args": { "snippet": "($1) => $0" },
+    "when": "editorTextFocus"
+  },
+  {
+    "key": "f20 l",
+    "command": "editor.action.insertSnippet",
+    "args": { "snippet": "console.log($0)" },
+    "when": "editorTextFocus"
   }
   //
 ]

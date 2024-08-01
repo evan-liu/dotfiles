@@ -111,6 +111,7 @@ map <C-w>x <Action>(Unsplit)
 " --------------------------------------
 map <D-A-C-a> <Plug>AllWholeOccurrences
 map <D-A-C-b> <Plug>AllOccurrences
+map <D-A-C-e> <Action>(EditorAddCaretPerSelectedLine)
 map <D-A-C-f> <Plug>NextWholeOccurrence
 map <D-A-C-g> <Plug>NextOccurrence
 map <D-A-C-s> <Plug>SkipOccurrence

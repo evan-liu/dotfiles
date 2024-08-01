@@ -27,6 +27,7 @@
     { "before": ["<leader>", "a", "u"], "commands": ["editor.action.transformToUppercase"] },
 
     // c - Code Completion / Format
+    { "before": ["<leader>", "<leader>", "c"], "commands": ["editor.action.triggerSuggest"] },
     { "before": ["<leader>", "c", "a"], "commands": ["editor.action.autoFix"] },
     { "before": ["<leader>", "c", "c"], "commands": ["editor.action.triggerSuggest"] },
     { "before": ["<leader>", "c", "f"], "commands": ["editor.action.formatDocument"] },
@@ -36,6 +37,7 @@
     { "before": ["<leader>", "c", "t"], "commands": ["editor.action.insertSnippet"] },
 
     // d - Doc / Info
+    { "before": ["<leader>", "<leader>", "d"], "commands": ["editor.action.peekDefinition"] },
     { "before": ["<leader>", "d", "d"], "commands": ["editor.action.peekDefinition"] },
     { "before": ["<leader>", "d", "h"], "commands": ["editor.action.showDefinitionPreviewHover"] },
     { "before": ["<leader>", "d", "i"], "commands": ["editor.action.peekImplementation"] },
@@ -216,5 +218,6 @@
   "explorer.confirmPasteNative": false,
   "explorer.autoReveal": false,
   "workbench.statusBar.visible": false,
-  "editor.stickyScroll.enabled": false
+  "editor.stickyScroll.enabled": false,
+  "gitlens.views.branches.branches.layout": "list"
 }
