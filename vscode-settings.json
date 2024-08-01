@@ -202,22 +202,22 @@
   "gitlens.virtualRepositories.enabled": false,
   "gitlens.graph.minimap.enabled": false,
 
-  "editor.lineNumbers": "off",
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "explorer.confirmPasteNative": false,
+  "explorer.autoReveal": false,
+
   "window.commandCenter": false,
   "breadcrumbs.symbolPath": "off",
-  "editor.accessibilitySupport": "off",
+  "editor.lineNumbers": "off",
   "editor.minimap.enabled": false,
+  "editor.stickyScroll.enabled": false,
   "editor.scrollBeyondLastLine": false,
+  "editor.accessibilitySupport": "off",
   "workbench.sideBar.location": "right",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.showTabs": "none",
   "workbench.activityBar.location": "hidden",
-  "explorer.confirmDragAndDrop": false,
-  "explorer.confirmDelete": false,
-  "explorer.confirmPasteNative": false,
-  "explorer.autoReveal": false,
-  "workbench.statusBar.visible": false,
-  "editor.stickyScroll.enabled": false,
-  "gitlens.views.branches.branches.layout": "list"
+  "workbench.statusBar.visible": false
 }
