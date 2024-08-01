@@ -186,6 +186,7 @@
   "prettier.trailingComma": "all",
   "prettier.bracketSameLine": true,
   "[jsonc]": { "prettier.printWidth": 120 },
+  "[snippets]": { "editor.defaultFormatter": "vscode.json-language-features" },
 
   "git.autofetch": true,
   "git.confirmSync": false,
