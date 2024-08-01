@@ -49,6 +49,7 @@
     "when": "editorTextFocus"
   },
 
+  // Goto changes
   {
     "key": "ctrl+cmd+j", // ⌘⌃ j
     "command": "workbench.action.editor.nextChange",
@@ -70,6 +71,7 @@
     "when": "textCompareEditorVisible"
   },
 
+  // Goto errors
   {
     "key": "ctrl+alt+j", // ⌥⌃ j
     "command": "editor.action.marker.next",
@@ -81,6 +83,7 @@
     "when": "editorFocus"
   },
 
+  // Move lines
   {
     "key": "shift+cmd+j", // ⌘⇧ j
     "command": "editor.action.moveLinesDownAction",
@@ -92,6 +95,7 @@
     "when": "editorTextFocus && !editorReadonly"
   },
 
+  // Multiple cursors
   {
     "key": "ctrl+alt+cmd+e", // ⌘⌥⌃ e
     "command": "editor.action.insertCursorAtEndOfEachLineSelected",
@@ -113,7 +117,7 @@
     "when": "editorTextFocus"
   },
 
-  //
+  // Terminal
   {
     "key": "cmd+t",
     "command": "workbench.action.terminal.new",
@@ -121,9 +125,10 @@
   },
   {
     "key": "cmd+w",
-    "command": "workbench.action.terminal.killActiveTab",
+    "command": "workbench.action.terminal.kill",
     "when": "terminalFocus"
   },
+  // Files explorer
   {
     "key": "cmd+n",
     "command": "explorer.newFile",
@@ -135,7 +140,7 @@
     "when": "filesExplorerFocus"
   },
 
-  // f20 - For Karabiner-Elements
+  // Snippets. f20 For Karabiner-Elements
   {
     "key": "f20 k",
     "command": "editor.action.insertSnippet",
