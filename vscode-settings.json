@@ -211,6 +211,7 @@
   "editor.stickyScroll.enabled": false,
   "editor.scrollBeyondLastLine": false,
   "editor.accessibilitySupport": "off",
+  "editor.guides.indentation": false,
   "workbench.sideBar.location": "right",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
