@@ -305,6 +305,7 @@ map <leader>vb <Action>(ViewToolButtons)
 map <leader>vs <Action>(ViewStatusBar)
 map <leader>vz <Action>(ChangeIdeScale)
 
+map <leader>vg <Action>(EditorToggleShowGutterIcons)
 map <leader>vG <Action>(ShowGutterIconsSettings)
 map <leader>vT <Action>(ConfigureEditorTabs)
 
