@@ -219,5 +219,7 @@
   "workbench.activityBar.location": "hidden",
   "workbench.statusBar.visible": false,
   "quokka.automaticStartRegex": "",
-  "workbench.iconTheme": "material-icon-theme"
+  "workbench.iconTheme": "material-icon-theme",
+  "terminal.integrated.env.osx": {},
+  "console-ninja.featureSet": "Community"
 }
