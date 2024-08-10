@@ -221,5 +221,6 @@
   "quokka.automaticStartRegex": "",
   "workbench.iconTheme": "material-icon-theme",
   "terminal.integrated.env.osx": {},
-  "console-ninja.featureSet": "Community"
+  "console-ninja.featureSet": "Community",
+  "cSpell.userWords": ["boardpro", "Navi", "organisation"]
 }
