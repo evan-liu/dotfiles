@@ -199,6 +199,8 @@
   "gitlens.virtualRepositories.enabled": false,
   "gitlens.graph.minimap.enabled": false,
 
+  "cSpell.userWords": ["boardpro", "Navi", "organisation"],
+
   "explorer.confirmDragAndDrop": false,
   "explorer.confirmDelete": false,
   "explorer.confirmPasteNative": false,
@@ -212,15 +214,11 @@
   "editor.scrollBeyondLastLine": false,
   "editor.accessibilitySupport": "off",
   "editor.guides.indentation": false,
+  "workbench.iconTheme": "material-icon-theme",
   "workbench.sideBar.location": "right",
   "workbench.layoutControl.enabled": false,
   "workbench.editor.editorActionsLocation": "hidden",
   "workbench.editor.showTabs": "none",
   "workbench.activityBar.location": "hidden",
-  "workbench.statusBar.visible": false,
-  "quokka.automaticStartRegex": "",
-  "workbench.iconTheme": "material-icon-theme",
-  "terminal.integrated.env.osx": {},
-  "console-ninja.featureSet": "Community",
-  "cSpell.userWords": ["boardpro", "Navi", "organisation"]
+  "workbench.statusBar.visible": false
 }
