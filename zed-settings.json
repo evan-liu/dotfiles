@@ -45,6 +45,7 @@
     "dock": "right"
   },
   "features": {
+    "edit_prediction_provider": "zed",
     "copilot": false
   },
   "chat_panel": {
