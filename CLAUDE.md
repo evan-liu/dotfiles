@@ -2,14 +2,45 @@
 
 ## Coding Style
 
+### Principles
+
 - **Be Precise, yet Concise**
 - Prioritize precision and clarity over brevity
 - Optimize API design for clarity at the call site
 - Minimize unnecessary code and diff noise
 
-### JavaScript/TypeScript
+### File Organization & Project Structure
 
-#### Variable Declaration
+#### Module Organization
+
+- Prefer feature-based organization (colocation) over type-based
+- Group related files together in feature directories
+
+#### Naming Conventions
+
+Use kebab-case for all folder and file names. e.g. `/user-profile/user-profile.tsx`.
+
+### Import/Export Patterns
+
+- Use named exports if they are imported in other code
+- Use default exports only when required by frameworks or tools
+
+## JavaScript/TypeScript
+
+### Code Formatting
+
+Prettier with config:
+
+```js
+/** @type {import('prettier').Config} */
+export default {
+  singleQuote: true,
+  semi: false,
+  bracketSameLine: true,
+}
+```
+
+### Variable Declaration
 
 Use `const` only for true constant values, e.g. `const GRAVITY = 9.81`. 
 Otherwise use `let` and:
@@ -21,7 +52,7 @@ Otherwise use `let` and:
   - ⚠️ In the same module
   - ❌ From another module
 
-#### Equality Comparisons
+### Equality Comparisons
 
 Prefer `==` over `===` in TypeScript.
 
