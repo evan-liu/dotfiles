@@ -9,3 +9,7 @@ See [🛠️ Editor Keymaps](https://evanliu.dev/productivity/editor-keymaps/).
 - [`vscode-keybindings.json`](https://github.com/evan-liu/dotfiles/blob/main/vscode-keybindings.json) - `keybindings.json` file for [VSCode](https://code.visualstudio.com/).
 - [`zed-keymap.json`](https://github.com/evan-liu/dotfiles/blob/main/zed-keymap.json) - `keymap.json` file for [Zed](https://zed.dev/).
 - [`zed-settings.json`](https://github.com/evan-liu/dotfiles/blob/main/zed-settings.json) - `settings.json` file for [Zed](https://zed.dev/).
+
+## Other files
+
+- [`CLAUDE.md`](https://github.com/evan-liu/dotfiles/blob/main/CLAUDE.md)
