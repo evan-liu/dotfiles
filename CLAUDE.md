@@ -63,3 +63,11 @@ or `T | null | undefined` (then `===` works the same as `==`).
 - ✅ `boolean`
 - ✅ `boolean | undefined`
 - ❌ `boolean | string`
+
+### Naming Conventions
+
+**Boolean variables**: Omit `is`/`has` prefix unless necessary for clarity:
+
+- ✅ `disabled` > `isDisabled`, `loading` > `isLoading`, `visible` > `isVisible`
+- ⚠️ `isOwner` (keep prefix when ambiguous)
+- ⚠️ `hasAccess` (keep prefix when ambiguous)
