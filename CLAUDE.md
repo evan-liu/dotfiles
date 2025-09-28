@@ -1,5 +1,7 @@
 # Development Guidelines
 
+**Important**: Read AGENTS.md for current project if exists.
+
 ## Coding Style
 
 ### Principles
