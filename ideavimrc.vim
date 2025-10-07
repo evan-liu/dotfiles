@@ -310,6 +310,9 @@ map <leader>vg <Action>(EditorToggleShowGutterIcons)
 map <leader>vG <Action>(ShowGutterIconsSettings)
 map <leader>vT <Action>(ConfigureEditorTabs)
 
+map <leader>ve <Action>(TextEditorWithPreview.Layout.EditorOnly)
+map <leader>vp <Action>(TextEditorWithPreview.Layout.PreviewOnly)
+
 " ----------------------------- x ------
 let g:WhichKeyDesc_x = "<leader>x Close/Hide/Delete"
 " --------------------------------------
