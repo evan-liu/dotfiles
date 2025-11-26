@@ -49,7 +49,7 @@
     "copilot": false
   },
   "chat_panel": {
-    "button": false
+    "button": "never"
   },
   //
   "language_overrides": {
