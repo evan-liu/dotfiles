@@ -129,7 +129,7 @@
   },
   {
     "bindings": {
-      "cmd-escape": "workspace::CloseAllDocks"
+      "cmd-shift-escape": "workspace::CloseAllDocks"
     }
   }
 ]
